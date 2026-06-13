@@ -3,19 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Prediction Tracker 🤖</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<title>AI Prediction Tracker 🍩</title>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bangers:wght@400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #020408;
-    --card: #0d1117;
-    --border: #21262d;
-    --accent: #7c3aed;
-    --accent2: #06b6d4;
-    --accent3: #10b981;
-    --text: #e6edf3;
-    --muted: #8b949e;
-    --alert: #f59e0b;
+    --bg: #1a0a00;
+    --card: #1f1200;
+    --border: #f59e0b44;
+    --accent: #fbbf24;
+    --accent2: #f59e0b;
+    --accent3: #84cc16;
+    --text: #fef3c7;
+    --muted: #d97706;
+    --alert: #ef4444;
+    --blue: #60a5fa;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -28,115 +29,163 @@
     overflow-x: hidden;
   }
 
-  /* ── stars ── */
-  #stars { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+  /* ── sky background ── */
+  #sky { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
 
   /* ── layout ── */
   .wrap { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 0 20px 80px; }
 
   /* ── header ── */
-  header {
-    text-align: center;
-    padding: 60px 0 40px;
+  header { text-align: center; padding: 50px 0 30px; }
+
+  .simpsons-logo {
+    font-family: 'Bangers', cursive;
+    font-size: clamp(2rem, 8vw, 5rem);
+    letter-spacing: 4px;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
   }
-  header h1 {
-    font-family: 'Orbitron', monospace;
-    font-size: clamp(1.6rem, 5vw, 3rem);
-    font-weight: 900;
-    background: linear-gradient(135deg, #7c3aed, #06b6d4, #10b981);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: 2px;
-  }
-  header p {
-    margin-top: 12px;
+  .simpsons-logo .word-ai    { color: #fbbf24; -webkit-text-stroke: 3px #d97706; text-shadow: 4px 4px 0 #92400e, 8px 8px 0 #451a03; }
+  .simpsons-logo .word-poly  { color: #60a5fa; -webkit-text-stroke: 3px #1d4ed8; text-shadow: 4px 4px 0 #1e3a8a, 8px 8px 0 #172554; }
+  .simpsons-logo .word-market{ color: #fbbf24; -webkit-text-stroke: 3px #d97706; text-shadow: 4px 4px 0 #92400e, 8px 8px 0 #451a03; }
+
+  .subtitle {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1rem;
     color: var(--muted);
-    font-size: 0.95rem;
+    margin-top: 12px;
     letter-spacing: 1px;
+  }
+
+  /* ── homer quote ticker ── */
+  .ticker-wrap {
+    background: #fbbf24;
+    padding: 10px 0;
+    overflow: hidden;
+    margin: 24px 0;
+    border-top: 3px solid #92400e;
+    border-bottom: 3px solid #92400e;
+  }
+  .ticker-inner {
+    display: inline-flex;
+    gap: 80px;
+    animation: ticker 30s linear infinite;
+    white-space: nowrap;
+  }
+  .ticker-inner span {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 0.9rem;
+    color: #1a0a00;
+  }
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* ── donut divider ── */
+  .donut-divider {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 8px 0;
+    letter-spacing: 12px;
+    opacity: 0.6;
   }
 
   /* ── stats bar ── */
-  .stats {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 32px 0;
-  }
+  .stats { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 24px 0; }
   .stat {
     background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
+    border: 2px solid var(--accent2);
+    border-radius: 16px;
     padding: 16px 28px;
     text-align: center;
     min-width: 130px;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat::after {
+    content: attr(data-emoji);
+    position: absolute;
+    bottom: -4px; right: 4px;
+    font-size: 1.8rem;
+    opacity: 0.15;
   }
   .stat-val {
-    font-family: 'Orbitron', monospace;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--accent2);
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: var(--accent);
+    letter-spacing: 2px;
   }
-  .stat-label { font-size: 0.75rem; color: var(--muted); margin-top: 4px; letter-spacing: 1px; text-transform: uppercase; }
+  .stat-label { font-size: 0.72rem; color: var(--muted); margin-top: 2px; letter-spacing: 1px; text-transform: uppercase; }
 
   /* ── language toggle ── */
-  .lang-toggle {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin: 24px 0;
-  }
+  .lang-toggle { display: flex; justify-content: center; gap: 8px; margin: 20px 0; }
   .lang-btn {
     padding: 8px 24px;
     border-radius: 20px;
-    border: 1px solid var(--border);
+    border: 2px solid var(--accent2);
     background: var(--card);
     color: var(--muted);
     cursor: pointer;
-    font-family: 'Orbitron', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 1px;
+    font-family: 'Bangers', cursive;
+    font-size: 1rem;
+    letter-spacing: 2px;
     transition: all 0.2s;
   }
-  .lang-btn.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-  }
+  .lang-btn.active { background: var(--accent); border-color: var(--accent); color: #1a0a00; }
 
   /* ── section title ── */
   .section-title {
-    font-family: 'Orbitron', monospace;
-    font-size: 0.8rem;
-    letter-spacing: 3px;
-    color: var(--muted);
-    text-transform: uppercase;
-    margin: 40px 0 16px;
+    font-family: 'Bangers', cursive;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    color: var(--accent);
+    margin: 36px 0 16px;
     display: flex;
     align-items: center;
     gap: 10px;
+    -webkit-text-stroke: 1px #92400e;
   }
-  .section-title::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
+  .section-title::after { content: ''; flex: 1; height: 2px; background: linear-gradient(90deg, var(--accent2), transparent); }
+
+  /* ── chalkboard panel ── */
+  .chalkboard {
+    background: #2d5a27;
+    border: 4px solid #1a3d17;
+    border-radius: 8px;
+    padding: 20px 28px;
+    margin-bottom: 24px;
+    position: relative;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.4), 4px 4px 0 #1a3d17;
+  }
+  .chalkboard::before {
+    content: '📋 BART\'S DAILY PREDICTION';
+    font-family: 'Permanent Marker', cursive;
+    font-size: 0.75rem;
+    color: #86efac;
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  .chalkboard-text {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.1rem;
+    color: #dcfce7;
+    line-height: 1.8;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   }
 
   /* ── report cards ── */
-  .reports-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 16px;
-  }
+  .reports-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
   .report-card {
     background: var(--card);
-    border: 1px solid var(--border);
+    border: 2px solid #92400e;
     border-radius: 16px;
     padding: 20px;
     cursor: pointer;
-    transition: border-color 0.2s, transform 0.2s;
+    transition: all 0.2s;
     position: relative;
     overflow: hidden;
   }
@@ -144,120 +193,169 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    height: 3px;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b);
     opacity: 0;
     transition: opacity 0.2s;
   }
-  .report-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .report-card:hover { border-color: var(--accent); transform: translateY(-3px) rotate(-0.5deg); box-shadow: 0 8px 24px rgba(251,191,36,0.2); }
   .report-card:hover::before { opacity: 1; }
-  .report-card.active { border-color: var(--accent2); }
-  .report-card.active::before { opacity: 1; background: linear-gradient(90deg, var(--accent2), var(--accent3)); }
+  .report-card.active { border-color: var(--accent); box-shadow: 0 0 20px rgba(251,191,36,0.3); }
+  .report-card.active::before { opacity: 1; }
 
-  .card-date {
-    font-family: 'Orbitron', monospace;
-    font-size: 0.85rem;
-    color: var(--accent2);
-    margin-bottom: 10px;
-  }
-  .card-markets { font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+  .card-date { font-family: 'Bangers', cursive; font-size: 1.1rem; color: var(--accent); margin-bottom: 10px; letter-spacing: 2px; }
+  .card-markets { font-size: 0.82rem; color: var(--muted); margin-bottom: 10px; }
 
   .market-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 0.8rem;
-    gap: 8px;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 0; border-bottom: 1px solid #92400e44; font-size: 0.8rem; gap: 8px;
   }
   .market-row:last-child { border-bottom: none; }
   .market-q { flex: 1; color: var(--text); line-height: 1.3; }
-  .market-prob {
-    font-family: 'Orbitron', monospace;
-    font-weight: 700;
-    font-size: 0.9rem;
-    min-width: 42px;
-    text-align: right;
-  }
-  .prob-high { color: var(--accent3); }
-  .prob-mid  { color: var(--alert); }
+  .market-prob { font-family: 'Bangers', cursive; font-size: 1.1rem; min-width: 48px; text-align: right; letter-spacing: 1px; }
+  .prob-high { color: #84cc16; }
+  .prob-mid  { color: #fbbf24; }
   .prob-low  { color: #ef4444; }
 
   .alert-badge {
     display: inline-block;
-    background: var(--alert);
-    color: #000;
-    font-size: 0.65rem;
-    font-weight: 700;
-    padding: 2px 7px;
+    background: #ef4444;
+    color: #fff;
+    font-family: 'Bangers', cursive;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 2px 8px;
     border-radius: 10px;
     margin-left: 6px;
-    vertical-align: middle;
   }
 
   /* ── insight panel ── */
   #insight-panel {
     background: var(--card);
-    border: 1px solid var(--accent);
+    border: 2px solid var(--accent2);
     border-radius: 16px;
     padding: 28px;
     margin-top: 24px;
     display: none;
     animation: fadeIn 0.3s ease;
+    position: relative;
   }
+  #insight-panel::before {
+    content: '🍩';
+    position: absolute;
+    top: -16px; right: 20px;
+    font-size: 2rem;
+    animation: spin 4s linear infinite;
+  }
+  @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
-  #insight-panel h3 {
-    font-family: 'Orbitron', monospace;
-    font-size: 0.85rem;
-    color: var(--accent2);
-    margin-bottom: 16px;
-    letter-spacing: 2px;
-  }
-  #insight-text {
-    font-size: 0.9rem;
-    line-height: 1.75;
-    color: var(--text);
-    white-space: pre-wrap;
-  }
+  #insight-panel h3 { font-family: 'Bangers', cursive; font-size: 1.3rem; color: var(--accent); margin-bottom: 16px; letter-spacing: 3px; }
+  #insight-text { font-size: 0.9rem; line-height: 1.75; color: var(--text); white-space: pre-wrap; }
 
   /* ── growth chart ── */
-  #growth-chart {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 24px;
-    margin-top: 16px;
+  #growth-chart { background: var(--card); border: 2px solid #92400e; border-radius: 16px; padding: 24px; margin-top: 16px; }
+
+  /* ── couch gag easter egg ── */
+  #couch-btn {
+    position: fixed;
+    bottom: 24px; right: 24px;
+    background: #fbbf24;
+    border: 3px solid #92400e;
+    border-radius: 50%;
+    width: 56px; height: 56px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(251,191,36,0.4);
+    transition: transform 0.2s;
+    display: flex; align-items: center; justify-content: center;
   }
-  #growth-chart canvas { width: 100% !important; }
+  #couch-btn:hover { transform: scale(1.15) rotate(10deg); }
+
+  #couch-modal {
+    display: none;
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(0,0,0,0.85);
+    align-items: center; justify-content: center;
+  }
+  #couch-modal.show { display: flex; }
+  .couch-box {
+    background: #fef3c7;
+    border: 4px solid #92400e;
+    border-radius: 20px;
+    padding: 32px 40px;
+    max-width: 480px;
+    text-align: center;
+    color: #1a0a00;
+    position: relative;
+  }
+  .couch-box h2 { font-family: 'Bangers', cursive; font-size: 2rem; color: #92400e; letter-spacing: 3px; margin-bottom: 16px; }
+  .couch-box p { font-family: 'Permanent Marker', cursive; font-size: 1rem; line-height: 1.7; }
+  .couch-close {
+    margin-top: 20px;
+    background: #fbbf24;
+    border: 2px solid #92400e;
+    border-radius: 10px;
+    padding: 10px 28px;
+    font-family: 'Bangers', cursive;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #1a0a00;
+  }
 
   /* ── footer ── */
-  footer {
-    text-align: center;
-    margin-top: 60px;
-    color: var(--muted);
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-  footer a { color: var(--accent2); text-decoration: none; }
+  footer { text-align: center; margin-top: 60px; color: var(--muted); font-size: 0.85rem; }
+  footer a { color: var(--accent); text-decoration: none; font-family: 'Permanent Marker', cursive; }
 </style>
 </head>
 <body>
 
-<canvas id="stars"></canvas>
+<canvas id="sky"></canvas>
+
+<!-- Homer quote ticker -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span>🍩 "Mmm... prediction markets" — Homer Simpson</span>
+    <span>📊 "Bart, stop shorting my portfolio!" — Homer</span>
+    <span>🤖 "AI will take our jobs... d'oh!" — Homer</span>
+    <span>💰 "In this house we obey the laws of Polymarket!" — Homer</span>
+    <span>🎯 "To alcohol! The cause of, and solution to, all of life's problems" — Homer</span>
+    <span>📈 "Facts are meaningless — you can use facts to prove anything that's even remotely true!" — Homer</span>
+    <span>🍩 "Mmm... prediction markets" — Homer Simpson</span>
+    <span>📊 "Bart, stop shorting my portfolio!" — Homer</span>
+    <span>🤖 "AI will take our jobs... d'oh!" — Homer</span>
+    <span>💰 "In this house we obey the laws of Polymarket!" — Homer</span>
+    <span>🎯 "To alcohol! The cause of, and solution to, all of life's problems" — Homer</span>
+    <span>📈 "Facts are meaningless — you can use facts to prove anything that's even remotely true!" — Homer</span>
+  </div>
+</div>
 
 <div class="wrap">
   <header>
-    <h1>⚡ AI PREDICTION TRACKER</h1>
-    <p>DAILY POLYMARKET INTELLIGENCE · BILINGUAL EN / RU · AUTO-UPDATED BY BOT</p>
+    <div class="simpsons-logo">
+      <span class="word-ai">AI</span> <span class="word-poly">POLY</span><span class="word-market">MARKET</span>
+    </div>
+    <div class="subtitle">🍩 Daily Intelligence from Springfield's Favorite Prediction Bot 🍩</div>
   </header>
 
+  <div class="donut-divider">🍩 🍩 🍩 🍩 🍩</div>
+
+  <!-- Chalkboard -->
+  <div class="chalkboard">
+    <div class="chalkboard-text" id="chalkboard-text">
+      I will not ignore prediction markets.<br>
+      I will not ignore prediction markets.<br>
+      I will not ignore prediction markets.
+    </div>
+  </div>
+
   <div class="stats">
-    <div class="stat"><div class="stat-val" id="stat-days">—</div><div class="stat-label">Days Tracked</div></div>
-    <div class="stat"><div class="stat-val" id="stat-markets">—</div><div class="stat-label">Markets Tracked</div></div>
-    <div class="stat"><div class="stat-val" id="stat-alerts">—</div><div class="stat-label">Alerts Fired</div></div>
-    <div class="stat"><div class="stat-val" id="stat-latest">—</div><div class="stat-label">Latest Update</div></div>
+    <div class="stat" data-emoji="🍩"><div class="stat-val" id="stat-days">—</div><div class="stat-label">Days Tracked</div></div>
+    <div class="stat" data-emoji="📊"><div class="stat-val" id="stat-markets">—</div><div class="stat-label">Markets Tracked</div></div>
+    <div class="stat" data-emoji="⚡"><div class="stat-val" id="stat-alerts">—</div><div class="stat-label">Alerts Fired</div></div>
+    <div class="stat" data-emoji="🤖"><div class="stat-val" id="stat-latest">—</div><div class="stat-label">Latest Update</div></div>
   </div>
 
   <div class="lang-toggle">
@@ -267,7 +365,7 @@
 
   <div class="section-title">📡 REPORTS ARCHIVE</div>
   <div class="reports-grid" id="reports-grid">
-    <div style="color:var(--muted);font-size:0.85rem;padding:20px">Loading reports...</div>
+    <div style="color:var(--muted);font-size:0.85rem;padding:20px;font-family:'Permanent Marker',cursive">D'oh! Loading reports...</div>
   </div>
 
   <div id="insight-panel">
@@ -280,41 +378,62 @@
 
   <footer>
     <p>Powered by <a href="https://polymarket.com" target="_blank">Polymarket</a> · <a href="https://openrouter.ai" target="_blank">OpenRouter</a> · GitHub Actions</p>
-    <p style="margin-top:8px">Auto-updated twice daily · <a href="https://github.com" target="_blank">View source</a></p>
+    <p style="margin-top:8px">🍩 Auto-updated twice daily · <a href="https://github.com/Deniwn22/ai-prediction-tracker" target="_blank">View source</a></p>
+    <p style="margin-top:12px;font-family:'Permanent Marker',cursive;font-size:0.75rem;opacity:0.5">"The secret to a good prediction is just guessing and acting confident" — Homer J. Simpson</p>
   </footer>
 </div>
 
-<script>
-// ── stars background ──────────────────────────────────────────────────────────
-(function() {
-  const c = document.getElementById('stars');
-  const ctx = c.getContext('2d');
-  let W, H, stars = [];
+<!-- Couch gag easter egg button -->
+<button id="couch-btn" onclick="openCouch()">🛋️</button>
 
-  function resize() {
-    W = c.width = window.innerWidth;
-    H = c.height = window.innerHeight;
-  }
+<!-- Couch gag modal -->
+<div id="couch-modal">
+  <div class="couch-box">
+    <h2>🛋️ COUCH GAG</h2>
+    <p id="couch-text"></p>
+    <button class="couch-close" onclick="closeCouch()">D'OH, CLOSE!</button>
+  </div>
+</div>
+
+<script>
+// ── donut sky background ──────────────────────────────────────────────────────
+(function() {
+  const c = document.getElementById('sky');
+  const ctx = c.getContext('2d');
+  let W, H, donuts = [];
+  const EMOJIS = ['🍩','🍩','🍩','⭐','🍩','✨','🍩'];
+
+  function resize() { W = c.width = window.innerWidth; H = c.height = window.innerHeight; }
 
   function init() {
     resize();
-    stars = Array.from({length: 180}, () => ({
+    donuts = Array.from({length: 35}, () => ({
       x: Math.random() * W,
       y: Math.random() * H,
-      r: Math.random() * 1.4 + 0.2,
-      a: Math.random(),
-      speed: Math.random() * 0.003 + 0.001
+      size: Math.random() * 18 + 8,
+      speed: Math.random() * 0.3 + 0.05,
+      emoji: EMOJIS[Math.floor(Math.random() * EMOJIS.length)],
+      opacity: Math.random() * 0.15 + 0.05,
+      angle: Math.random() * Math.PI * 2,
+      angleSpeed: (Math.random() - 0.5) * 0.01
     }));
   }
 
   function draw() {
     ctx.clearRect(0, 0, W, H);
-    stars.forEach(s => {
-      s.a += s.speed;
-      ctx.beginPath();
-      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(180,200,255,${0.3 + 0.4 * Math.abs(Math.sin(s.a))})`;
-      ctx.fill();
+    donuts.forEach(d => {
+      d.y -= d.speed;
+      d.angle += d.angleSpeed;
+      if (d.y < -30) { d.y = H + 30; d.x = Math.random() * W; }
+      ctx.save();
+      ctx.globalAlpha = d.opacity;
+      ctx.translate(d.x, d.y);
+      ctx.rotate(d.angle);
+      ctx.font = `${d.size}px serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(d.emoji, 0, 0);
+      ctx.restore();
     });
     requestAnimationFrame(draw);
   }
@@ -323,15 +442,53 @@
   init(); draw();
 })();
 
+// ── chalkboard random sentences ───────────────────────────────────────────────
+const chalkboardSentences = [
+  "I will not ignore prediction markets.",
+  "I will not short AI stocks with lunch money.",
+  "Polymarket is not a video game.",
+  "I will not tell Milhouse that GPT-5 is already out.",
+  "I will not use AI to do my homework.",
+  "The AI singularity is not an excuse to skip school.",
+  "I will not bet my allowance on ChatGPT benchmarks.",
+  "OpenAI is not my personal ATM.",
+];
+
+function randomChalkboard() {
+  const el = document.getElementById('chalkboard-text');
+  const s = chalkboardSentences[Math.floor(Math.random() * chalkboardSentences.length)];
+  el.innerHTML = `${s}<br>${s}<br>${s}`;
+}
+randomChalkboard();
+setInterval(randomChalkboard, 8000);
+
+// ── couch gag easter egg ──────────────────────────────────────────────────────
+const couchGags = [
+  "The family runs in and sits on the couch. The couch transforms into a Polymarket trading terminal. Homer immediately loses everything.",
+  "The family sits down. A robot version of Homer walks in holding a sign: 'AI TOOK MY JOB'. The original Homer shrugs and eats a donut.",
+  "The family runs in but the couch is replaced by a giant prediction market. Bart bets 'YES' on everything. He wins.",
+  "Homer sits alone. He opens a laptop. He discovers this website. He stares. He eats a donut. Credits roll.",
+  "The family rushes in. They all become AI chatbots. Marge says 'I am a language model. I cannot eat donuts.' Homer cries.",
+  "The family sits on the couch. Suddenly — Elon Musk walks in. He posts 'DOGE' on the prediction board. Everyone loses.",
+];
+
+function openCouch() {
+  const gag = couchGags[Math.floor(Math.random() * couchGags.length)];
+  document.getElementById('couch-text').textContent = gag;
+  document.getElementById('couch-modal').classList.add('show');
+}
+function closeCouch() {
+  document.getElementById('couch-modal').classList.remove('show');
+}
+
 // ── config ────────────────────────────────────────────────────────────────────
-const GITHUB_USER = "Deniwn22";   // ← замени
+const GITHUB_USER = "Deniwn22";
 const GITHUB_REPO = "ai-prediction-tracker";
 const RAW = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/reports`;
 
 let allReports = [];
 let currentLang = 'en';
 
-// ── language toggle ───────────────────────────────────────────────────────────
 function setLang(lang) {
   currentLang = lang;
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
@@ -340,23 +497,15 @@ function setLang(lang) {
   if (active) showInsight(active.dataset.date);
 }
 
-// ── fetch report list via GitHub API ─────────────────────────────────────────
 async function fetchReportList() {
   try {
-    const res = await fetch(
-      `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/reports`
-    );
+    const res = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/reports`);
     if (!res.ok) return [];
     const files = await res.json();
-    return files
-      .filter(f => f.name.endsWith('-report.json'))
-      .map(f => f.name.replace('-report.json', ''))
-      .sort()
-      .reverse();
+    return files.filter(f => f.name.endsWith('-report.json')).map(f => f.name.replace('-report.json', '')).sort().reverse();
   } catch { return []; }
 }
 
-// ── fetch single report JSON ──────────────────────────────────────────────────
 async function fetchReport(date) {
   try {
     const res = await fetch(`${RAW}/${date}-report.json`);
@@ -365,7 +514,6 @@ async function fetchReport(date) {
   } catch { return null; }
 }
 
-// ── prob color ────────────────────────────────────────────────────────────────
 function probClass(p) {
   if (p === null) return '';
   if (p >= 60) return 'prob-high';
@@ -373,28 +521,24 @@ function probClass(p) {
   return 'prob-low';
 }
 
-// ── render report card ────────────────────────────────────────────────────────
 function renderCard(report) {
   const hasAlerts = report.alerts && report.alerts.length > 0;
   const topMarkets = (report.markets || []).slice(0, 4);
-
   const rows = topMarkets.map(m => `
     <div class="market-row">
       <div class="market-q">${m.question.slice(0, 55)}${m.question.length > 55 ? '…' : ''}</div>
       <div class="market-prob ${probClass(m.probability)}">${m.probability !== null ? m.probability + '%' : '?'}</div>
     </div>
   `).join('');
-
   return `
     <div class="report-card" data-date="${report.date}" onclick="selectCard(this, '${report.date}')">
-      <div class="card-date">📅 ${report.date}${hasAlerts ? '<span class="alert-badge">⚡ ALERT</span>' : ''}</div>
+      <div class="card-date">📅 ${report.date}${hasAlerts ? '<span class="alert-badge">⚡ D\'OH!</span>' : ''}</div>
       <div class="card-markets">${report.markets?.length || 0} AI markets tracked</div>
       ${rows}
     </div>
   `;
 }
 
-// ── select card & show insight ────────────────────────────────────────────────
 function selectCard(el, date) {
   document.querySelectorAll('.report-card').forEach(c => c.classList.remove('active'));
   el.classList.add('active');
@@ -404,40 +548,30 @@ function selectCard(el, date) {
 async function showInsight(date) {
   const report = allReports.find(r => r.date === date);
   if (!report) return;
-
   const panel = document.getElementById('insight-panel');
   const text = document.getElementById('insight-text');
   const title = document.getElementById('insight-title');
-
   panel.style.display = 'block';
   title.textContent = currentLang === 'en' ? '🧠 DAILY INSIGHT — ' + date : '🧠 ЕЖЕДНЕВНЫЙ АНАЛИЗ — ' + date;
-
-  const insight = report.insight?.[currentLang] || 'No insight available.';
-  text.textContent = insight;
+  text.textContent = report.insight?.[currentLang] || "D'oh! No insight available.";
   panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
-// ── draw growth chart ─────────────────────────────────────────────────────────
 function drawGrowthChart(reports) {
   const canvas = document.getElementById('growthCanvas');
   const ctx = canvas.getContext('2d');
   const W = canvas.offsetWidth || 800;
   const H = 120;
   canvas.width = W; canvas.height = H;
-
   if (reports.length < 2) return;
-
   const pad = { l: 10, r: 10, t: 10, b: 10 };
   const points = reports.slice().reverse().map((r, i) => ({
     x: pad.l + (i / (reports.length - 1)) * (W - pad.l - pad.r),
     y: H - pad.b - ((i + 1) / reports.length) * (H - pad.t - pad.b),
   }));
-
-  // gradient fill
   const grad = ctx.createLinearGradient(0, 0, 0, H);
-  grad.addColorStop(0, 'rgba(124,58,237,0.3)');
-  grad.addColorStop(1, 'rgba(124,58,237,0)');
-
+  grad.addColorStop(0, 'rgba(251,191,36,0.35)');
+  grad.addColorStop(1, 'rgba(251,191,36,0)');
   ctx.beginPath();
   ctx.moveTo(points[0].x, H);
   points.forEach(p => ctx.lineTo(p.x, p.y));
@@ -445,24 +579,19 @@ function drawGrowthChart(reports) {
   ctx.closePath();
   ctx.fillStyle = grad;
   ctx.fill();
-
-  // line
   ctx.beginPath();
   points.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
-  ctx.strokeStyle = '#7c3aed';
-  ctx.lineWidth = 2;
+  ctx.strokeStyle = '#fbbf24';
+  ctx.lineWidth = 2.5;
   ctx.stroke();
-
-  // dots
   points.forEach(p => {
     ctx.beginPath();
-    ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
-    ctx.fillStyle = '#06b6d4';
+    ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+    ctx.fillStyle = '#f59e0b';
     ctx.fill();
   });
 }
 
-// ── update stats ──────────────────────────────────────────────────────────────
 function updateStats(reports) {
   document.getElementById('stat-days').textContent = reports.length;
   const totalMarkets = reports.reduce((s, r) => s + (r.markets?.length || 0), 0);
@@ -472,24 +601,17 @@ function updateStats(reports) {
   document.getElementById('stat-latest').textContent = reports[0]?.date?.slice(5) || '—';
 }
 
-// ── main init ─────────────────────────────────────────────────────────────────
 async function init() {
   const grid = document.getElementById('reports-grid');
   const dates = await fetchReportList();
-
   if (dates.length === 0) {
-    grid.innerHTML = '<div style="color:var(--muted);font-size:0.85rem;padding:20px">No reports yet — bot will generate the first one soon ⏳</div>';
+    grid.innerHTML = '<div style="color:var(--muted);font-size:0.85rem;padding:20px;font-family:\'Permanent Marker\',cursive">D\'oh! No reports yet — bot fires up soon 🍩</div>';
     return;
   }
-
-  // fetch all reports in parallel
   allReports = (await Promise.all(dates.map(fetchReport))).filter(Boolean);
-
   grid.innerHTML = allReports.map(renderCard).join('');
   updateStats(allReports);
   drawGrowthChart(allReports);
-
-  // auto-open latest
   const firstCard = document.querySelector('.report-card');
   if (firstCard) { firstCard.classList.add('active'); showInsight(allReports[0].date); }
 }
