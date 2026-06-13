@@ -1,239 +1,500 @@
-const fetch = require("node-fetch");
-const fs = require("fs");
-const path = require("path");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Prediction Tracker 🤖</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #020408;
+    --card: #0d1117;
+    --border: #21262d;
+    --accent: #7c3aed;
+    --accent2: #06b6d4;
+    --accent3: #10b981;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --alert: #f59e0b;
+  }
 
-const OPENROUTER_API_KEY = process.env.OPENAI_API_KEY;
-const REPORTS_DIR = "reports";
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-// ── helpers ──────────────────────────────────────────────────────────────────
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
 
-function today() {
-  return new Date().toISOString().split("T")[0];
-}
+  /* ── stars ── */
+  #stars { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
 
-function ensureDir(dir) {
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-}
+  /* ── layout ── */
+  .wrap { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 0 20px 80px; }
 
-// ── Polymarket API ────────────────────────────────────────────────────────────
+  /* ── header ── */
+  header {
+    text-align: center;
+    padding: 60px 0 40px;
+  }
+  header h1 {
+    font-family: 'Orbitron', monospace;
+    font-size: clamp(1.6rem, 5vw, 3rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #7c3aed, #06b6d4, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
+  }
+  header p {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+  }
 
-async function fetchAIMarkets() {
-  try {
-    const url =
-      "https://gamma-api.polymarket.com/markets?closed=false&limit=50&order=volume24hr&ascending=false";
-    const res = await fetch(url);
-    const data = await res.json();
+  /* ── stats bar ── */
+  .stats {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px 0;
+  }
+  .stat {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 28px;
+    text-align: center;
+    min-width: 130px;
+  }
+  .stat-val {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent2);
+  }
+  .stat-label { font-size: 0.75rem; color: var(--muted); margin-top: 4px; letter-spacing: 1px; text-transform: uppercase; }
 
-    const keywords = [
-      "AI", "GPT", "Claude", "Gemini", "OpenAI", "Anthropic", "Google",
-      "artificial intelligence", "machine learning", "LLM", "AGI",
-      "Grok", "Meta AI", "regulation", "model", "benchmark"
-    ];
+  /* ── language toggle ── */
+  .lang-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 24px 0;
+  }
+  .lang-btn {
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--muted);
+    cursor: pointer;
+    font-family: 'Orbitron', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+  }
+  .lang-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
 
-    const aiMarkets = data.filter((m) => {
-      const text = (m.question || m.title || "").toLowerCase();
-      return keywords.some((k) => text.toLowerCase().includes(k.toLowerCase()));
-    });
+  /* ── section title ── */
+  .section-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin: 40px 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
 
-    return aiMarkets.slice(0, 10).map((m) => ({
-      question: m.question || m.title || "Unknown",
-      probability: m.outcomePrices
-        ? Math.round(parseFloat(JSON.parse(m.outcomePrices)[0]) * 100)
-        : null,
-      volume24h: m.volume24hr ? parseFloat(m.volume24hr).toFixed(0) : "0",
-      totalVolume: m.volume ? parseFloat(m.volume).toFixed(0) : "0",
-      endDate: m.endDate ? m.endDate.split("T")[0] : "N/A",
-      url: m.slug ? `https://polymarket.com/event/${m.slug}` : "#",
+  /* ── report cards ── */
+  .reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+  .report-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .report-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .report-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .report-card:hover::before { opacity: 1; }
+  .report-card.active { border-color: var(--accent2); }
+  .report-card.active::before { opacity: 1; background: linear-gradient(90deg, var(--accent2), var(--accent3)); }
+
+  .card-date {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.85rem;
+    color: var(--accent2);
+    margin-bottom: 10px;
+  }
+  .card-markets { font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+
+  .market-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.8rem;
+    gap: 8px;
+  }
+  .market-row:last-child { border-bottom: none; }
+  .market-q { flex: 1; color: var(--text); line-height: 1.3; }
+  .market-prob {
+    font-family: 'Orbitron', monospace;
+    font-weight: 700;
+    font-size: 0.9rem;
+    min-width: 42px;
+    text-align: right;
+  }
+  .prob-high { color: var(--accent3); }
+  .prob-mid  { color: var(--alert); }
+  .prob-low  { color: #ef4444; }
+
+  .alert-badge {
+    display: inline-block;
+    background: var(--alert);
+    color: #000;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  /* ── insight panel ── */
+  #insight-panel {
+    background: var(--card);
+    border: 1px solid var(--accent);
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 24px;
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  #insight-panel h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.85rem;
+    color: var(--accent2);
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+  #insight-text {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: var(--text);
+    white-space: pre-wrap;
+  }
+
+  /* ── growth chart ── */
+  #growth-chart {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 16px;
+  }
+  #growth-chart canvas { width: 100% !important; }
+
+  /* ── footer ── */
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    color: var(--muted);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  footer a { color: var(--accent2); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<div class="wrap">
+  <header>
+    <h1>⚡ AI PREDICTION TRACKER</h1>
+    <p>DAILY POLYMARKET INTELLIGENCE · BILINGUAL EN / RU · AUTO-UPDATED BY BOT</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-val" id="stat-days">—</div><div class="stat-label">Days Tracked</div></div>
+    <div class="stat"><div class="stat-val" id="stat-markets">—</div><div class="stat-label">Markets Tracked</div></div>
+    <div class="stat"><div class="stat-val" id="stat-alerts">—</div><div class="stat-label">Alerts Fired</div></div>
+    <div class="stat"><div class="stat-val" id="stat-latest">—</div><div class="stat-label">Latest Update</div></div>
+  </div>
+
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="setLang('en')">🇺🇸 ENGLISH</button>
+    <button class="lang-btn" onclick="setLang('ru')">🇷🇺 РУССКИЙ</button>
+  </div>
+
+  <div class="section-title">📡 REPORTS ARCHIVE</div>
+  <div class="reports-grid" id="reports-grid">
+    <div style="color:var(--muted);font-size:0.85rem;padding:20px">Loading reports...</div>
+  </div>
+
+  <div id="insight-panel">
+    <h3 id="insight-title">🧠 DAILY INSIGHT</h3>
+    <div id="insight-text"></div>
+  </div>
+
+  <div class="section-title">📈 ARCHIVE GROWTH</div>
+  <div id="growth-chart"><canvas id="growthCanvas" height="120"></canvas></div>
+
+  <footer>
+    <p>Powered by <a href="https://polymarket.com" target="_blank">Polymarket</a> · <a href="https://openrouter.ai" target="_blank">OpenRouter</a> · GitHub Actions</p>
+    <p style="margin-top:8px">Auto-updated twice daily · <a href="https://github.com" target="_blank">View source</a></p>
+  </footer>
+</div>
+
+<script>
+// ── stars background ──────────────────────────────────────────────────────────
+(function() {
+  const c = document.getElementById('stars');
+  const ctx = c.getContext('2d');
+  let W, H, stars = [];
+
+  function resize() {
+    W = c.width = window.innerWidth;
+    H = c.height = window.innerHeight;
+  }
+
+  function init() {
+    resize();
+    stars = Array.from({length: 180}, () => ({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      r: Math.random() * 1.4 + 0.2,
+      a: Math.random(),
+      speed: Math.random() * 0.003 + 0.001
     }));
-  } catch (err) {
-    console.error("Polymarket fetch error:", err.message);
-    return [];
   }
-}
 
-// ── detect big movers (>10% swing) ───────────────────────────────────────────
-
-function detectAlerts(markets) {
-  const yesterday = path.join(
-    REPORTS_DIR,
-    `${getPreviousDate()}-report.json`
-  );
-  if (!fs.existsSync(yesterday)) return [];
-
-  const prev = JSON.parse(fs.readFileSync(yesterday, "utf8")).markets || [];
-  const alerts = [];
-
-  markets.forEach((m) => {
-    const old = prev.find((p) => p.question === m.question);
-    if (old && old.probability !== null && m.probability !== null) {
-      const delta = m.probability - old.probability;
-      if (Math.abs(delta) >= 10) {
-        alerts.push({ question: m.question, delta, now: m.probability });
-      }
-    }
-  });
-
-  return alerts;
-}
-
-function getPreviousDate() {
-  const d = new Date();
-  d.setDate(d.getDate() - 1);
-  return d.toISOString().split("T")[0];
-}
-
-// ── OpenRouter AI analysis ────────────────────────────────────────────────────
-
-async function generateInsight(markets, alerts, lang = "en") {
-  const langInstruction =
-    lang === "ru"
-      ? "Respond entirely in Russian. Use clear, professional Russian."
-      : "Respond entirely in English.";
-
-  const alertBlock =
-    alerts.length > 0
-      ? `\nSIGNIFICANT MOVES (>10%):\n${alerts
-          .map(
-            (a) =>
-              `- "${a.question}": ${a.delta > 0 ? "+" : ""}${a.delta}pp → now ${a.now}%`
-          )
-          .join("\n")}`
-      : "";
-
-  const marketList = markets
-    .map(
-      (m, i) =>
-        `${i + 1}. "${m.question}" — ${m.probability ?? "?"}% | 24h vol: $${m.volume24h} | closes: ${m.endDate}`
-    )
-    .join("\n");
-
-  const prompt = `${langInstruction}
-
-You are an AI market analyst. Today is ${today()}.
-
-TOP AI PREDICTION MARKETS ON POLYMARKET:
-${marketList}
-${alertBlock}
-
-Write a structured daily briefing with these sections:
-1. TOP INSIGHT — the single most important signal from today's markets (2-3 sentences)
-2. HOT MARKETS — 3 most interesting markets and why they matter right now
-3. TREND WATCH — what pattern or narrative is emerging across these markets
-4. ALERT — if there were big probability moves, explain what might have caused them (skip if none)
-5. ONE PREDICTION — your own bold take on what happens next week
-
-Keep it sharp, data-driven, and useful for someone tracking the AI industry.`;
-
-  try {
-    const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${OPENROUTER_API_KEY}`,
-        "Content-Type": "application/json",
-        "HTTP-Referer": "https://github.com/ai-prediction-tracker",
-        "X-Title": "AI Prediction Tracker",
-      },
-      body: JSON.stringify({
-        model: "openrouter/auto",
-        max_tokens: 1000,
-        messages: [{ role: "user", content: prompt }],
-      }),
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    stars.forEach(s => {
+      s.a += s.speed;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(180,200,255,${0.3 + 0.4 * Math.abs(Math.sin(s.a))})`;
+      ctx.fill();
     });
-
-    const data = await res.json();
-    return data.choices?.[0]?.message?.content || "Analysis unavailable.";
-  } catch (err) {
-    console.error(`OpenRouter error (${lang}):`, err.message);
-    return "Analysis unavailable.";
+    requestAnimationFrame(draw);
   }
+
+  window.addEventListener('resize', resize);
+  init(); draw();
+})();
+
+// ── config ────────────────────────────────────────────────────────────────────
+const GITHUB_USER = "Deniwn22";   // ← замени
+const GITHUB_REPO = "ai-prediction-tracker";
+const RAW = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/reports`;
+
+let allReports = [];
+let currentLang = 'en';
+
+// ── language toggle ───────────────────────────────────────────────────────────
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.lang-btn')[lang === 'en' ? 0 : 1].classList.add('active');
+  const active = document.querySelector('.report-card.active');
+  if (active) showInsight(active.dataset.date);
 }
 
-// ── save JSON + markdown ──────────────────────────────────────────────────────
-
-function saveReport(date, markets, alerts, insightEN, insightRU) {
-  ensureDir(REPORTS_DIR);
-
-  // JSON (for weekly.py and charts)
-  const json = {
-    date,
-    generatedAt: new Date().toISOString(),
-    markets,
-    alerts,
-    insight: { en: insightEN, ru: insightRU },
-  };
-  fs.writeFileSync(
-    path.join(REPORTS_DIR, `${date}-report.json`),
-    JSON.stringify(json, null, 2)
-  );
-
-  // Markdown bilingual
-  const alertMd =
-    alerts.length > 0
-      ? `\n## ⚡ Alerts / Алерты\n${alerts
-          .map(
-            (a) =>
-              `- **${a.question}** moved ${a.delta > 0 ? "+" : ""}${a.delta}pp → **${a.now}%**`
-          )
-          .join("\n")}\n`
-      : "";
-
-  const marketTable = markets
-    .map(
-      (m) =>
-        `| ${m.question.slice(0, 60)}… | ${m.probability ?? "?"}% | $${m.volume24h} | ${m.endDate} |`
-    )
-    .join("\n");
-
-  const md = `# 🤖 AI Prediction Tracker — ${date}
-
-## 📊 Top AI Markets on Polymarket
-
-| Market | Probability | 24h Volume | Closes |
-|--------|-------------|------------|--------|
-${marketTable}
-${alertMd}
----
-
-## 🧠 Daily Insight (English)
-
-${insightEN}
-
----
-
-## 🧠 Ежедневный анализ (Русский)
-
-${insightRU}
-
----
-*Generated automatically by [ai-prediction-tracker](https://github.com) bot • ${new Date().toISOString()}*
-`;
-
-  fs.writeFileSync(path.join(REPORTS_DIR, `${date}-report.md`), md);
-  console.log(`✅ Report saved: ${date}`);
+// ── fetch report list via GitHub API ─────────────────────────────────────────
+async function fetchReportList() {
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/reports`
+    );
+    if (!res.ok) return [];
+    const files = await res.json();
+    return files
+      .filter(f => f.name.endsWith('-report.json'))
+      .map(f => f.name.replace('-report.json', ''))
+      .sort()
+      .reverse();
+  } catch { return []; }
 }
 
-// ── main ──────────────────────────────────────────────────────────────────────
-
-async function main() {
-  console.log(`🚀 AI Prediction Tracker starting — ${today()}`);
-
-  const markets = await fetchAIMarkets();
-  console.log(`📊 Found ${markets.length} AI markets`);
-
-  const alerts = detectAlerts(markets);
-  console.log(`⚡ Alerts: ${alerts.length}`);
-
-  console.log("🧠 Generating EN insight...");
-  const insightEN = await generateInsight(markets, alerts, "en");
-
-  console.log("🧠 Generating RU insight...");
-  const insightRU = await generateInsight(markets, alerts, "ru");
-
-  saveReport(today(), markets, alerts, insightEN, insightRU);
-  console.log("✅ Done!");
+// ── fetch single report JSON ──────────────────────────────────────────────────
+async function fetchReport(date) {
+  try {
+    const res = await fetch(`${RAW}/${date}-report.json`);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch { return null; }
 }
 
-main().catch((err) => {
-  console.error("Fatal error:", err);
-  process.exit(1);
-});
+// ── prob color ────────────────────────────────────────────────────────────────
+function probClass(p) {
+  if (p === null) return '';
+  if (p >= 60) return 'prob-high';
+  if (p >= 35) return 'prob-mid';
+  return 'prob-low';
+}
+
+// ── render report card ────────────────────────────────────────────────────────
+function renderCard(report) {
+  const hasAlerts = report.alerts && report.alerts.length > 0;
+  const topMarkets = (report.markets || []).slice(0, 4);
+
+  const rows = topMarkets.map(m => `
+    <div class="market-row">
+      <div class="market-q">${m.question.slice(0, 55)}${m.question.length > 55 ? '…' : ''}</div>
+      <div class="market-prob ${probClass(m.probability)}">${m.probability !== null ? m.probability + '%' : '?'}</div>
+    </div>
+  `).join('');
+
+  return `
+    <div class="report-card" data-date="${report.date}" onclick="selectCard(this, '${report.date}')">
+      <div class="card-date">📅 ${report.date}${hasAlerts ? '<span class="alert-badge">⚡ ALERT</span>' : ''}</div>
+      <div class="card-markets">${report.markets?.length || 0} AI markets tracked</div>
+      ${rows}
+    </div>
+  `;
+}
+
+// ── select card & show insight ────────────────────────────────────────────────
+function selectCard(el, date) {
+  document.querySelectorAll('.report-card').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  showInsight(date);
+}
+
+async function showInsight(date) {
+  const report = allReports.find(r => r.date === date);
+  if (!report) return;
+
+  const panel = document.getElementById('insight-panel');
+  const text = document.getElementById('insight-text');
+  const title = document.getElementById('insight-title');
+
+  panel.style.display = 'block';
+  title.textContent = currentLang === 'en' ? '🧠 DAILY INSIGHT — ' + date : '🧠 ЕЖЕДНЕВНЫЙ АНАЛИЗ — ' + date;
+
+  const insight = report.insight?.[currentLang] || 'No insight available.';
+  text.textContent = insight;
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ── draw growth chart ─────────────────────────────────────────────────────────
+function drawGrowthChart(reports) {
+  const canvas = document.getElementById('growthCanvas');
+  const ctx = canvas.getContext('2d');
+  const W = canvas.offsetWidth || 800;
+  const H = 120;
+  canvas.width = W; canvas.height = H;
+
+  if (reports.length < 2) return;
+
+  const pad = { l: 10, r: 10, t: 10, b: 10 };
+  const points = reports.slice().reverse().map((r, i) => ({
+    x: pad.l + (i / (reports.length - 1)) * (W - pad.l - pad.r),
+    y: H - pad.b - ((i + 1) / reports.length) * (H - pad.t - pad.b),
+  }));
+
+  // gradient fill
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, 'rgba(124,58,237,0.3)');
+  grad.addColorStop(1, 'rgba(124,58,237,0)');
+
+  ctx.beginPath();
+  ctx.moveTo(points[0].x, H);
+  points.forEach(p => ctx.lineTo(p.x, p.y));
+  ctx.lineTo(points[points.length - 1].x, H);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // line
+  ctx.beginPath();
+  points.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+  ctx.strokeStyle = '#7c3aed';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // dots
+  points.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+    ctx.fillStyle = '#06b6d4';
+    ctx.fill();
+  });
+}
+
+// ── update stats ──────────────────────────────────────────────────────────────
+function updateStats(reports) {
+  document.getElementById('stat-days').textContent = reports.length;
+  const totalMarkets = reports.reduce((s, r) => s + (r.markets?.length || 0), 0);
+  document.getElementById('stat-markets').textContent = totalMarkets;
+  const totalAlerts = reports.reduce((s, r) => s + (r.alerts?.length || 0), 0);
+  document.getElementById('stat-alerts').textContent = totalAlerts;
+  document.getElementById('stat-latest').textContent = reports[0]?.date?.slice(5) || '—';
+}
+
+// ── main init ─────────────────────────────────────────────────────────────────
+async function init() {
+  const grid = document.getElementById('reports-grid');
+  const dates = await fetchReportList();
+
+  if (dates.length === 0) {
+    grid.innerHTML = '<div style="color:var(--muted);font-size:0.85rem;padding:20px">No reports yet — bot will generate the first one soon ⏳</div>';
+    return;
+  }
+
+  // fetch all reports in parallel
+  allReports = (await Promise.all(dates.map(fetchReport))).filter(Boolean);
+
+  grid.innerHTML = allReports.map(renderCard).join('');
+  updateStats(allReports);
+  drawGrowthChart(allReports);
+
+  // auto-open latest
+  const firstCard = document.querySelector('.report-card');
+  if (firstCard) { firstCard.classList.add('active'); showInsight(allReports[0].date); }
+}
+
+init();
+</script>
+</body>
+</html>
