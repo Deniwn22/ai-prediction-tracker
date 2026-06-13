@@ -1,0 +1,15 @@
+{
+  "name": "ai-prediction-tracker",
+  "version": "1.0.0",
+  "description": "Daily AI market intelligence from Polymarket — bilingual EN/RU reports",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "weekly": "python3 weekly.py"
+  },
+  "dependencies": {
+    "node-fetch": "2"
+  },
+  "author": "your-github-username",
+  "license": "MIT"
+}
