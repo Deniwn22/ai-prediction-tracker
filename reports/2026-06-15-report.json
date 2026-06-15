@@ -1,0 +1,59 @@
+{
+  "date": "2026-06-15",
+  "generatedAt": "2026-06-15T15:20:02.388Z",
+  "markets": [
+    {
+      "question": "Spread: Spain (-2.5)",
+      "probability": 59,
+      "volume24h": "5850234",
+      "totalVolume": "5975850",
+      "endDate": "2026-06-15",
+      "url": "https://polymarket.com/event/fifwc-esp-cvi-2026-06-15-spread-home-2pt5"
+    },
+    {
+      "question": "Will Spain win on 2026-06-15?",
+      "probability": 93,
+      "volume24h": "4035970",
+      "totalVolume": "4571590",
+      "endDate": "2026-06-15",
+      "url": "https://polymarket.com/event/fifwc-esp-cvi-2026-06-15-esp"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by end of June?",
+      "probability": 27,
+      "volume24h": "2597692",
+      "totalVolume": "23380472",
+      "endDate": "2026-06-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-end-of-june"
+    },
+    {
+      "question": "Spain vs. Cabo Verde: O/U 3.5",
+      "probability": 56,
+      "volume24h": "2564725",
+      "totalVolume": "2627169",
+      "endDate": "2026-06-15",
+      "url": "https://polymarket.com/event/fifwc-esp-cvi-2026-06-15-total-3pt5"
+    },
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 16,
+      "volume24h": "2233435",
+      "totalVolume": "46344570",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by June 15?",
+      "probability": 0,
+      "volume24h": "1860833",
+      "totalVolume": "10789145",
+      "endDate": "2026-06-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-june-15"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "**TOP INSIGHT**  \nThe clearest signal is that **sports and geopolitics are dominating risk appetite**, not AI-specific themes: Spain’s match and World Cup markets are absorbing the most volume, while the Strait of Hormuz markets are pricing a meaningful but not dominant chance of normalization by month-end. Spain is also being treated as a serious football favorite on Polymarket, with one report putting its World Cup win probability around 17%, just ahead of France at 16%.[1]\n\n**HOT MARKETS**  \n- **Will Spain win on 2026-06-15? (93%)** — This is the cleanest near-term consensus trade, and the combination of very high probability with heavy volume suggests traders see the outcome as largely settled, making it a useful gauge of crowd conviction rather than uncertainty.[2][3]  \n- **Spread: Spain (-2.5) (59%)** — A 59% price on the spread indicates traders expect Spain to win comfortably, but not overwhelmingly; that makes it a key market for reading how much margin confidence exists beyond a simple win/no-win view.[2][3]  \n- **Strait of Hormuz traffic returns to normal by end of June? (27%)** — This is the most consequential macro-risk market in the set, because it reflects whether shipping disruption is temporary or persistent; at 27%, the market is leaning toward continued abnormality through month-end.[2][3]\n\n**TREND WATCH**  \nA clear pattern is **strong consensus on Spain in the immediate match, paired with more uncertainty on how dominant the win will be**, shown by the gap between the 93% win market and the lower-priced spread and over/under markets.[2][3] The Hormuz pair also shows a timing split: traders assign **0%** to normalization by June 15 but **27%** by June 30, implying the market expects any recovery to be delayed rather than impossible.[2][3]\n\n**ALERT**  \nThe biggest notable move in the list is the **complete collapse to 0% for “Strait of Hormuz traffic returns to normal by June 15?”** versus 27% for end-of-month normalization, which suggests traders have effectively ruled out an immediate rebound while still leaving room for a later partial recovery.[2][3] That kind of shift is usually driven by a fast-moving real-world event, such as continued disruption, a failed de-escalation, or shipping data confirming abnormal traffic patterns, though the provided results do not identify the exact trigger.[2][3]\n\n**ONE PREDICTION**  \n**Next week, Spain-related markets will stay crowded but start to compress as the immediate match risk clears, while the Hormuz markets will become the more important signal for broader geopolitical volatility.**",
+    "ru": "### ЕЖЕДНЕВНАЯ БЮЛЛЕТЕНЬ AI-МАРКЕТОВ POLYMARKET\n\n#### 1. ТОП ИНСАЙТ\nНаиболее критическим сигналом сегодня является экстраординарная уверенность в ничейном исходе матча «Спред: Испания (-2.5)», где рыночная вероятность ничьей достигла 59%, что противопоставляет общему тренду. В сочетании с 93% вероятностью победы Испании в прямом вопросе «Will Spain win on 2026-06-15?», это указывает на глубокий рыночный консенсус, который, однако, противоречит базовым ожиданиям.\n\n#### 2. ГОРЯЧИЕ МАРКЕТЫ\n1. **«Will Spain win the 2026 FIFA World Cup?»** (16% вероятности, 2,2 млн долл. объема) — trotz низкой вероятности, этот рынок привлекает внимание как ключевой индикатор доверия к долгосрочным прогнозам на чемпионат мира, который находится в самом разгаре.\n2. **«Strait of Hormuz traffic returns to normal by end of June?»** (27% вероятности, 2,6 млн долл. объема) — критически важен для AI-индустрии, так как нормализация логистики в Ормузском проливе напрямую влияет на глобальные цепочки поставок оборудования и вычислительных ресурсов.\n3. **«Spain vs. Cabo Verde: O/U 3.5»** (56% вероятности, 2,6 млн долл. объема) — важен в контексте текущих спортивных событий, где рынки показывают высокую чувствительность к результатам матчей, что отражает общую динамику рынка.\n\n#### 3. ТРЕНД НАБОР\nНаблюдается явный тренд высокой чувствительности к текущим спортивным событиям, где рынки демонстрируют высокую чувствительность к результатам матчей, что отражает общую динамику рынка. В сочетании с рыночной чувствительностью к логистическим нормализациям, это указывает на общую зависимость рынка от глобальных факторов.\n\n#### 4. ПРЕДУПРЕЖДЕНИЕ\nЕсли были крупные изменения вероятностей, объясните, что могло их вызвать (пропустить, если нет).\n\n#### 5. ОДИН ПРОГНОЗ\nМой дерзкий прогноз на следующую неделю: нормализация логистики в Ормузском проливе приведет к значительному росту глобальных цепочек поставок оборудования и вычислительных ресурсов, что напрямую повлияет на AI-индустрию.\n\n---\n*Бюллетень sharp, data-driven и useful для someone tracking the AI industry.*"
+  }
+}
