@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-24",
+  "generatedAt": "2026-06-24T11:48:29.686Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by end of June?",
+      "probability": 2,
+      "volume24h": "1241972",
+      "totalVolume": "33267117",
+      "endDate": "2026-06-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-end-of-june"
+    },
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 14,
+      "volume24h": "936261",
+      "totalVolume": "62004305",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Morocco vs. Haiti: O/U 2.5",
+      "probability": 63,
+      "volume24h": "510604",
+      "totalVolume": "571798",
+      "endDate": "2026-06-24",
+      "url": "https://polymarket.com/event/fifwc-mar-hai-2026-06-24-total-2pt5"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
