@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-25",
+  "generatedAt": "2026-06-25T11:42:24.522Z",
+  "markets": [
+    {
+      "question": "Will Z.ai have the best AI model at the end of June 2026?",
+      "probability": 0,
+      "volume24h": "3828495",
+      "totalVolume": "5135079",
+      "endDate": "2026-06-30",
+      "url": "https://polymarket.com/event/will-zai-have-the-best-ai-model-at-the-end-of-june-2026"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by end of June?",
+      "probability": 9,
+      "volume24h": "1792024",
+      "totalVolume": "35059091",
+      "endDate": "2026-06-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-end-of-june"
+    },
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 14,
+      "volume24h": "947674",
+      "totalVolume": "62951902",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 15?",
+      "probability": 39,
+      "volume24h": "716955",
+      "totalVolume": "3361116",
+      "endDate": "2026-07-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-15"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 57,
+      "volume24h": "645043",
+      "totalVolume": "8948537",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
