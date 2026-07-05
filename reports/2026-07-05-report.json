@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-05",
+  "generatedAt": "2026-07-05T11:07:06.513Z",
+  "markets": [
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 12,
+      "volume24h": "1267566",
+      "totalVolume": "84960274",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by end of June?",
+      "probability": 0,
+      "volume24h": "786236",
+      "totalVolume": "43408709",
+      "endDate": "2026-06-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-end-of-june"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 15?",
+      "probability": 4,
+      "volume24h": "289234",
+      "totalVolume": "6778096",
+      "endDate": "2026-07-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-15"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by December 31?",
+      "probability": 74,
+      "volume24h": "287466",
+      "totalVolume": "3831451",
+      "endDate": "2026-12-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+    },
+    {
+      "question": "Will Spain win on 2026-07-06?",
+      "probability": 52,
+      "volume24h": "262898",
+      "totalVolume": "474572",
+      "endDate": "2026-07-06",
+      "url": "https://polymarket.com/event/fifwc-prt-esp-2026-07-06-esp"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
