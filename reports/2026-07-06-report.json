@@ -1,0 +1,91 @@
+{
+  "date": "2026-07-06",
+  "generatedAt": "2026-07-06T12:53:08.730Z",
+  "markets": [
+    {
+      "question": "Portugal vs. Spain: Team to Advance",
+      "probability": 34,
+      "volume24h": "2980769",
+      "totalVolume": "3285233",
+      "endDate": "2026-07-06",
+      "url": "https://polymarket.com/event/fifwc-prt-esp-2026-07-06-team-to-advance"
+    },
+    {
+      "question": "Will Spain win on 2026-07-06?",
+      "probability": 52,
+      "volume24h": "2005598",
+      "totalVolume": "2491178",
+      "endDate": "2026-07-06",
+      "url": "https://polymarket.com/event/fifwc-prt-esp-2026-07-06-esp"
+    },
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 13,
+      "volume24h": "1924456",
+      "totalVolume": "86918381",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Exact Score: Portugal 3 - 3 Spain?",
+      "probability": 2,
+      "volume24h": "880879",
+      "totalVolume": "902116",
+      "endDate": "2026-07-06",
+      "url": "https://polymarket.com/event/fifwc-prt-esp-2026-07-06-exact-score-3-3"
+    },
+    {
+      "question": "Portugal vs. Spain: O/U 2.5",
+      "probability": 54,
+      "volume24h": "595782",
+      "totalVolume": "770821",
+      "endDate": "2026-07-06",
+      "url": "https://polymarket.com/event/fifwc-prt-esp-2026-07-06-total-2pt5"
+    },
+    {
+      "question": "Will Portugal vs. Spain end in a draw?",
+      "probability": 27,
+      "volume24h": "590457",
+      "totalVolume": "641274",
+      "endDate": "2026-07-06",
+      "url": "https://polymarket.com/event/fifwc-prt-esp-2026-07-06-draw"
+    },
+    {
+      "question": "Exact Score: Portugal 3 - 2 Spain?",
+      "probability": 2,
+      "volume24h": "530519",
+      "totalVolume": "538867",
+      "endDate": "2026-07-06",
+      "url": "https://polymarket.com/event/fifwc-prt-esp-2026-07-06-exact-score-3-2"
+    },
+    {
+      "question": "Portugal vs. Spain: Both Teams to Score",
+      "probability": 60,
+      "volume24h": "518165",
+      "totalVolume": "529579",
+      "endDate": "2026-07-06",
+      "url": "https://polymarket.com/event/fifwc-prt-esp-2026-07-06-btts"
+    },
+    {
+      "question": "Exact Score: Portugal 2 - 3 Spain?",
+      "probability": 4,
+      "volume24h": "474824",
+      "totalVolume": "487569",
+      "endDate": "2026-07-06",
+      "url": "https://polymarket.com/event/fifwc-prt-esp-2026-07-06-exact-score-2-3"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by end of June?",
+      "probability": 0,
+      "volume24h": "450600",
+      "totalVolume": "43876546",
+      "endDate": "2026-06-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-end-of-june"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
