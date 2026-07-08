@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-08",
+  "generatedAt": "2026-07-08T11:08:49.469Z",
+  "markets": [
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 19,
+      "volume24h": "2398645",
+      "totalVolume": "93061990",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Will Patrick Bailey win the 2026 NL Platinum Glove award?",
+      "probability": 1,
+      "volume24h": "857264",
+      "totalVolume": "864423",
+      "endDate": "2026-12-19",
+      "url": "https://polymarket.com/event/will-patrick-bailey-win-the-2026-nl-platinum-glove-award"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 5,
+      "volume24h": "610654",
+      "totalVolume": "13228927",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 15?",
+      "probability": 1,
+      "volume24h": "515349",
+      "totalVolume": "8121633",
+      "endDate": "2026-07-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-15"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 7?",
+      "probability": 0,
+      "volume24h": "443200",
+      "totalVolume": "2085735",
+      "endDate": "2026-07-07",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-7-20260625174256255"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
