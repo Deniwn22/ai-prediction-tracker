@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-09",
+  "generatedAt": "2026-07-09T12:14:49.494Z",
+  "markets": [
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 19,
+      "volume24h": "1853883",
+      "totalVolume": "94952851",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Will Spain win on 2026-07-10?",
+      "probability": 60,
+      "volume24h": "752676",
+      "totalVolume": "873186",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-esp"
+    },
+    {
+      "question": "Spain vs. Belgium: O/U 2.5",
+      "probability": 55,
+      "volume24h": "696083",
+      "totalVolume": "919333",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-total-2pt5"
+    },
+    {
+      "question": "Spain vs. Belgium: Team to Advance",
+      "probability": 74,
+      "volume24h": "428151",
+      "totalVolume": "656493",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-team-to-advance"
+    },
+    {
+      "question": "Iran full airspace closure by July 15?",
+      "probability": 15,
+      "volume24h": "407440",
+      "totalVolume": "1259652",
+      "endDate": "2026-07-15",
+      "url": "https://polymarket.com/event/iran-full-airspace-closure-by-july-15-20260625195254149"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
