@@ -1,0 +1,91 @@
+{
+  "date": "2026-07-10",
+  "generatedAt": "2026-07-10T11:56:03.984Z",
+  "markets": [
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 16,
+      "volume24h": "3544837",
+      "totalVolume": "98495984",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Will Spain win on 2026-07-10?",
+      "probability": 60,
+      "volume24h": "2653451",
+      "totalVolume": "3512757",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-esp"
+    },
+    {
+      "question": "Spain vs. Belgium: Team to Advance",
+      "probability": 75,
+      "volume24h": "1972813",
+      "totalVolume": "2623360",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-team-to-advance"
+    },
+    {
+      "question": "UFC 329: Max Holloway vs. Conor McGregor (Welterweight, Main Card)",
+      "probability": 68,
+      "volume24h": "1806499",
+      "totalVolume": "4089878",
+      "endDate": "2026-07-12",
+      "url": "https://polymarket.com/event/ufc-max1-con-2026-07-11"
+    },
+    {
+      "question": "Spain vs. Belgium: O/U 2.5",
+      "probability": 54,
+      "volume24h": "695681",
+      "totalVolume": "1614987",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-total-2pt5"
+    },
+    {
+      "question": "Spread: Spain (-1.5)",
+      "probability": 35,
+      "volume24h": "574097",
+      "totalVolume": "587026",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-spread-home-1pt5"
+    },
+    {
+      "question": "Will Spain vs. Belgium end in a draw?",
+      "probability": 24,
+      "volume24h": "557261",
+      "totalVolume": "654611",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-draw"
+    },
+    {
+      "question": "Exact Score: Spain 2 - 0 Belgium?",
+      "probability": 11,
+      "volume24h": "461619",
+      "totalVolume": "478684",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-exact-score-2-0"
+    },
+    {
+      "question": "Exact Score: Spain 2 - 1 Belgium?",
+      "probability": 12,
+      "volume24h": "442147",
+      "totalVolume": "458946",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-exact-score-2-1"
+    },
+    {
+      "question": "Exact Score: Spain 2 - 3 Belgium?",
+      "probability": 2,
+      "volume24h": "312987",
+      "totalVolume": "403584",
+      "endDate": "2026-07-10",
+      "url": "https://polymarket.com/event/fifwc-esp-bel-2026-07-10-exact-score-2-3"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
