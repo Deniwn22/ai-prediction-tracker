@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-11",
+  "generatedAt": "2026-07-11T10:18:05.579Z",
+  "markets": [
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 21,
+      "volume24h": "4619815",
+      "totalVolume": "102556936",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "UFC 329: Max Holloway vs. Conor McGregor (Welterweight, Main Card)",
+      "probability": 70,
+      "volume24h": "1624659",
+      "totalVolume": "5680202",
+      "endDate": "2026-07-12",
+      "url": "https://polymarket.com/event/ufc-max1-con-2026-07-11"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 8,
+      "volume24h": "639327",
+      "totalVolume": "14377256",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "UFC 329: Paddy Pimblett vs. Benoît Saint Denis (Lightweight, Main Card)",
+      "probability": 45,
+      "volume24h": "390499",
+      "totalVolume": "527614",
+      "endDate": "2026-07-12",
+      "url": "https://polymarket.com/event/ufc-pad-ben8-2026-07-11"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 15?",
+      "probability": 0,
+      "volume24h": "288274",
+      "totalVolume": "8724686",
+      "endDate": "2026-07-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-15"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
