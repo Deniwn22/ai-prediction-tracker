@@ -1,0 +1,83 @@
+{
+  "date": "2026-07-12",
+  "generatedAt": "2026-07-12T10:37:26.324Z",
+  "markets": [
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 20,
+      "volume24h": "2381664",
+      "totalVolume": "104943331",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "France vs. Spain: Team to Advance",
+      "probability": 60,
+      "volume24h": "1827315",
+      "totalVolume": "1827315",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-team-to-advance"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 5,
+      "volume24h": "1216912",
+      "totalVolume": "15600954",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 15?",
+      "probability": 0,
+      "volume24h": "479147",
+      "totalVolume": "9204095",
+      "endDate": "2026-07-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-15"
+    },
+    {
+      "question": "Iran full airspace closure by July 15?",
+      "probability": 11,
+      "volume24h": "433222",
+      "totalVolume": "2056225",
+      "endDate": "2026-07-15",
+      "url": "https://polymarket.com/event/iran-full-airspace-closure-by-july-15-20260625195254149"
+    },
+    {
+      "question": "France vs. Spain: O/U 2.5",
+      "probability": 52,
+      "volume24h": "393614",
+      "totalVolume": "393614",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-total-2pt5"
+    },
+    {
+      "question": "Exact Score: France 2 - 1 Spain?",
+      "probability": 11,
+      "volume24h": "221728",
+      "totalVolume": "221728",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-exact-score-2-1"
+    },
+    {
+      "question": "Will Spain win on 2026-07-14?",
+      "probability": 28,
+      "volume24h": "184191",
+      "totalVolume": "185413",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-esp"
+    },
+    {
+      "question": "France vs. Spain: Both Teams to Score",
+      "probability": 59,
+      "volume24h": "173547",
+      "totalVolume": "173547",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-btts"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
