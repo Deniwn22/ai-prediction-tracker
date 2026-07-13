@@ -1,0 +1,91 @@
+{
+  "date": "2026-07-13",
+  "generatedAt": "2026-07-13T12:10:17.723Z",
+  "markets": [
+    {
+      "question": "France vs. Spain: Team to Advance",
+      "probability": 60,
+      "volume24h": "3031952",
+      "totalVolume": "5428292",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-team-to-advance"
+    },
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 21,
+      "volume24h": "1884355",
+      "totalVolume": "107174336",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Will Spain win on 2026-07-14?",
+      "probability": 29,
+      "volume24h": "1305025",
+      "totalVolume": "1497352",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-esp"
+    },
+    {
+      "question": "Will France vs. Spain end in a draw?",
+      "probability": 30,
+      "volume24h": "748341",
+      "totalVolume": "810925",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-draw"
+    },
+    {
+      "question": "France vs. Spain: O/U 2.5",
+      "probability": 51,
+      "volume24h": "722402",
+      "totalVolume": "1217341",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-total-2pt5"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 15?",
+      "probability": 0,
+      "volume24h": "606366",
+      "totalVolume": "9813465",
+      "endDate": "2026-07-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-15"
+    },
+    {
+      "question": "Exact Score: France 2 - 1 Spain?",
+      "probability": 11,
+      "volume24h": "425044",
+      "totalVolume": "656760",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-exact-score-2-1"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 3,
+      "volume24h": "392781",
+      "totalVolume": "16030456",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "France vs. Spain: Both Teams to Score",
+      "probability": 60,
+      "volume24h": "289428",
+      "totalVolume": "473207",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-btts"
+    },
+    {
+      "question": "Exact Score: France 3 - 2 Spain?",
+      "probability": 3,
+      "volume24h": "211785",
+      "totalVolume": "295281",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-exact-score-3-2"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
