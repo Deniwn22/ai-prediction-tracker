@@ -1,0 +1,91 @@
+{
+  "date": "2026-07-14",
+  "generatedAt": "2026-07-14T10:51:05.334Z",
+  "markets": [
+    {
+      "question": "France vs. Spain: Team to Advance",
+      "probability": 60,
+      "volume24h": "4109067",
+      "totalVolume": "9365543",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-team-to-advance"
+    },
+    {
+      "question": "Will Spain win on 2026-07-14?",
+      "probability": 30,
+      "volume24h": "2170881",
+      "totalVolume": "3444432",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-esp"
+    },
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 21,
+      "volume24h": "1784962",
+      "totalVolume": "108907509",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "France vs. Spain: O/U 2.5",
+      "probability": 49,
+      "volume24h": "1442223",
+      "totalVolume": "2658101",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-total-2pt5"
+    },
+    {
+      "question": "Exact Score: France 3 - 3 Spain?",
+      "probability": 1,
+      "volume24h": "982108",
+      "totalVolume": "1269675",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-exact-score-3-3"
+    },
+    {
+      "question": "Exact Score: France 2 - 1 Spain?",
+      "probability": 11,
+      "volume24h": "836684",
+      "totalVolume": "1427147",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-exact-score-2-1"
+    },
+    {
+      "question": "France vs. Spain: Both Teams to Score",
+      "probability": 59,
+      "volume24h": "829557",
+      "totalVolume": "1298776",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-btts"
+    },
+    {
+      "question": "Iran military action against a Gulf State on July 9?",
+      "probability": 100,
+      "volume24h": "668646",
+      "totalVolume": "798648",
+      "endDate": "2026-07-09",
+      "url": "https://polymarket.com/event/iran-military-action-against-a-gulf-state-on-july-9-20260708212322934"
+    },
+    {
+      "question": "Will France vs. Spain end in a draw?",
+      "probability": 30,
+      "volume24h": "649486",
+      "totalVolume": "1445208",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-draw"
+    },
+    {
+      "question": "Exact Score: France 0 - 0 Spain?",
+      "probability": 8,
+      "volume24h": "550961",
+      "totalVolume": "635205",
+      "endDate": "2026-07-14",
+      "url": "https://polymarket.com/event/fifwc-fra-esp-2026-07-14-exact-score-0-0"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
