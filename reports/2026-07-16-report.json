@@ -1,0 +1,43 @@
+{
+  "date": "2026-07-16",
+  "generatedAt": "2026-07-16T11:03:29.905Z",
+  "markets": [
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 58,
+      "volume24h": "4723373",
+      "totalVolume": "120970166",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Exact Score: Spain 2 - 3 Argentina?",
+      "probability": 2,
+      "volume24h": "716678",
+      "totalVolume": "716678",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-exact-score-2-3"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 1,
+      "volume24h": "216613",
+      "totalVolume": "17006886",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Spread: Spain (-1.5)",
+      "probability": 20,
+      "volume24h": "202599",
+      "totalVolume": "202599",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-spread-home-1pt5"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
