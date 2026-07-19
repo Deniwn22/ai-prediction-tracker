@@ -1,0 +1,91 @@
+{
+  "date": "2026-07-19",
+  "generatedAt": "2026-07-19T10:37:43.082Z",
+  "markets": [
+    {
+      "question": "Spain vs. Argentina: Team to Advance",
+      "probability": 59,
+      "volume24h": "4391658",
+      "totalVolume": "6299693",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-team-to-advance"
+    },
+    {
+      "question": "Exact Score: Spain 2 - 3 Argentina?",
+      "probability": 3,
+      "volume24h": "3587575",
+      "totalVolume": "8644624",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-exact-score-2-3"
+    },
+    {
+      "question": "Exact Score: Spain 3 - 3 Argentina?",
+      "probability": 1,
+      "volume24h": "2782344",
+      "totalVolume": "3922845",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-exact-score-3-3"
+    },
+    {
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "probability": 59,
+      "volume24h": "2455079",
+      "totalVolume": "125860626",
+      "endDate": "2026-07-20",
+      "url": "https://polymarket.com/event/will-spain-win-the-2026-fifa-world-cup-963"
+    },
+    {
+      "question": "Exact Score: Spain 3 - 2 Argentina?",
+      "probability": 3,
+      "volume24h": "1535638",
+      "totalVolume": "2629931",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-exact-score-3-2"
+    },
+    {
+      "question": "Spain vs. Argentina: Both Teams to Score",
+      "probability": 54,
+      "volume24h": "1280504",
+      "totalVolume": "1623884",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-btts"
+    },
+    {
+      "question": "Exact Score: Spain 2 - 2 Argentina?",
+      "probability": 6,
+      "volume24h": "1007737",
+      "totalVolume": "1524473",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-exact-score-2-2"
+    },
+    {
+      "question": "Exact Score: Spain 1 - 2 Argentina?",
+      "probability": 8,
+      "volume24h": "979613",
+      "totalVolume": "1515249",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-exact-score-1-2"
+    },
+    {
+      "question": "Exact Score: Spain 2 - 1 Argentina?",
+      "probability": 10,
+      "volume24h": "961510",
+      "totalVolume": "1668378",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-exact-score-2-1"
+    },
+    {
+      "question": "Will Spain win on 2026-07-19?",
+      "probability": 42,
+      "volume24h": "773780",
+      "totalVolume": "1398223",
+      "endDate": "2026-07-19",
+      "url": "https://polymarket.com/event/fifwc-esp-arg-2026-07-19-esp"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
