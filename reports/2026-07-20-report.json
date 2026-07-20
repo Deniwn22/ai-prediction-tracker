@@ -1,0 +1,43 @@
+{
+  "date": "2026-07-20",
+  "generatedAt": "2026-07-20T11:49:14.956Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 2,
+      "volume24h": "909965",
+      "totalVolume": "18706186",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 16,
+      "volume24h": "289215",
+      "totalVolume": "1331250",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Israel closes its airspace by July 31?",
+      "probability": 16,
+      "volume24h": "168600",
+      "totalVolume": "1869861",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/israel-closes-its-airspace-by-july-31-287"
+    },
+    {
+      "question": "Iran full airspace closure by July 31?",
+      "probability": 25,
+      "volume24h": "130892",
+      "totalVolume": "1265186",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/iran-full-airspace-closure-by-july-31-20260625195254150-838"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
