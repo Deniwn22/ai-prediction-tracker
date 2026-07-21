@@ -1,0 +1,27 @@
+{
+  "date": "2026-07-21",
+  "generatedAt": "2026-07-21T11:11:37.428Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 1,
+      "volume24h": "320974",
+      "totalVolume": "18960148",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Will Jeonbuk Hyundai Motors FC win on 2026-07-21?",
+      "probability": 46,
+      "volume24h": "302741",
+      "totalVolume": "305200",
+      "endDate": "2026-07-21",
+      "url": "https://polymarket.com/event/kor-jeo-dae1-2026-07-21-jeo"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
