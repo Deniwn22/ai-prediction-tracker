@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-23",
+  "generatedAt": "2026-07-23T11:13:57.426Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 1,
+      "volume24h": "297505",
+      "totalVolume": "19657283",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Will LeBron James play for the Orlando Magic in 2026-27?",
+      "probability": 0,
+      "volume24h": "246356",
+      "totalVolume": "701853",
+      "endDate": "2026-10-31",
+      "url": "https://polymarket.com/event/will-lebron-james-play-for-the-orlando-magic-in-2026-27"
+    },
+    {
+      "question": "Bab el-Mandeb Strait effectively closed by August 31?",
+      "probability": 21,
+      "volume24h": "133426",
+      "totalVolume": "485120",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by-august-31"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
