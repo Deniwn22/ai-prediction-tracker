@@ -1,0 +1,67 @@
+{
+  "date": "2026-07-24",
+  "generatedAt": "2026-07-24T11:07:16.983Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 1,
+      "volume24h": "622209",
+      "totalVolume": "20274564",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Counter-Strike: magic vs 3DMAX - Map 2 Winner",
+      "probability": 1,
+      "volume24h": "395183",
+      "totalVolume": "395713",
+      "endDate": "2026-07-24",
+      "url": "https://polymarket.com/event/cs2-mgc-3dmax-2026-07-24-game2"
+    },
+    {
+      "question": "Counter-Strike: magic vs 3DMAX (BO3) - BLAST Bounty Qualifier",
+      "probability": 59,
+      "volume24h": "278020",
+      "totalVolume": "289625",
+      "endDate": "2026-07-24",
+      "url": "https://polymarket.com/event/cs2-mgc-3dmax-2026-07-24"
+    },
+    {
+      "question": "Counter-Strike: magic vs 3DMAX - Map 1 Winner",
+      "probability": 100,
+      "volume24h": "249837",
+      "totalVolume": "254994",
+      "endDate": "2026-07-24",
+      "url": "https://polymarket.com/event/cs2-mgc-3dmax-2026-07-24-game1"
+    },
+    {
+      "question": "Israel closes its airspace by July 24?",
+      "probability": 5,
+      "volume24h": "187749",
+      "totalVolume": "603199",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/israel-closes-its-airspace-by-july-24"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 12,
+      "volume24h": "184593",
+      "totalVolume": "1966423",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by December 31?",
+      "probability": 52,
+      "volume24h": "168720",
+      "totalVolume": "5833661",
+      "endDate": "2026-12-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
