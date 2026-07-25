@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-25",
+  "generatedAt": "2026-07-25T10:36:50.648Z",
+  "markets": [
+    {
+      "question": "Bab el-Mandeb Strait effectively closed by July 31?",
+      "probability": 3,
+      "volume24h": "229528",
+      "totalVolume": "847460",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by-july-31"
+    },
+    {
+      "question": "UFC Fight Night: Wellington Turman vs. Islam Dulatov (Welterweight, Main Card)",
+      "probability": 48,
+      "volume24h": "215073",
+      "totalVolume": "218245",
+      "endDate": "2026-07-26",
+      "url": "https://polymarket.com/event/ufc-wel-isl2-2026-07-25"
+    },
+    {
+      "question": "Israel closes its airspace by July 31?",
+      "probability": 13,
+      "volume24h": "193016",
+      "totalVolume": "2418010",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/israel-closes-its-airspace-by-july-31-287"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 13,
+      "volume24h": "183253",
+      "totalVolume": "2149642",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 1,
+      "volume24h": "150215",
+      "totalVolume": "20421106",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
