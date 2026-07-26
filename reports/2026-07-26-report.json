@@ -1,0 +1,83 @@
+{
+  "date": "2026-07-26",
+  "generatedAt": "2026-07-26T10:46:42.258Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 17,
+      "volume24h": "634205",
+      "totalVolume": "2783854",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 1,
+      "volume24h": "505899",
+      "totalVolume": "20927005",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Bab el-Mandeb Strait effectively closed by July 31?",
+      "probability": 0,
+      "volume24h": "259691",
+      "totalVolume": "1107151",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by-july-31"
+    },
+    {
+      "question": "Counter-Strike: NIP vs paiN (BO3) - BLAST Bounty Qualifier",
+      "probability": 30,
+      "volume24h": "247555",
+      "totalVolume": "249858",
+      "endDate": "2026-07-26",
+      "url": "https://polymarket.com/event/cs2-nip-pain-2026-07-26"
+    },
+    {
+      "question": "Counter-Strike: NIP vs paiN - Map 1 Winner",
+      "probability": 0,
+      "volume24h": "181242",
+      "totalVolume": "181242",
+      "endDate": "2026-07-26",
+      "url": "https://polymarket.com/event/cs2-nip-pain-2026-07-26-game1"
+    },
+    {
+      "question": "Will Google have the best AI model at the end of July 2026?",
+      "probability": 0,
+      "volume24h": "151872",
+      "totalVolume": "827587",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/will-google-have-the-best-ai-model-at-the-end-of-july-2026"
+    },
+    {
+      "question": "Israel closes its airspace by July 31?",
+      "probability": 6,
+      "volume24h": "143834",
+      "totalVolume": "2563593",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/israel-closes-its-airspace-by-july-31-287"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 30?",
+      "probability": 29,
+      "volume24h": "141223",
+      "totalVolume": "679843",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by December 31?",
+      "probability": 57,
+      "volume24h": "124530",
+      "totalVolume": "6043517",
+      "endDate": "2026-12-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
