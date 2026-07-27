@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-27",
+  "generatedAt": "2026-07-27T12:28:23.297Z",
+  "markets": [
+    {
+      "question": "Targu Mures: Caijsa Hennemann vs Mia Pohankova",
+      "probability": 47,
+      "volume24h": "393430",
+      "totalVolume": "393430",
+      "endDate": "2026-08-03",
+      "url": "https://polymarket.com/event/wta-hennema-pohanko-2026-07-27"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 14,
+      "volume24h": "345270",
+      "totalVolume": "3129944",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 0,
+      "volume24h": "321104",
+      "totalVolume": "21250108",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Will Rodina gain the most seats in the next Russian parliamentary election?",
+      "probability": 0,
+      "volume24h": "130334",
+      "totalVolume": "1960334",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/will-rodina-gain-the-most-seats-in-the-next-russian-parliamentary-election"
+    },
+    {
+      "question": "Will China invade Taiwan by end of 2026?",
+      "probability": 4,
+      "volume24h": "128146",
+      "totalVolume": "39150913",
+      "endDate": "2026-12-31",
+      "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
