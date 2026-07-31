@@ -1,0 +1,43 @@
+{
+  "date": "2026-07-31",
+  "generatedAt": "2026-07-31T11:31:40.971Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "probability": 0,
+      "volume24h": "313536",
+      "totalVolume": "23512267",
+      "endDate": "2026-07-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-july-31"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 7,
+      "volume24h": "279222",
+      "totalVolume": "4383304",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Will China invade Taiwan by December 31, 2027?",
+      "probability": 14,
+      "volume24h": "223671",
+      "totalVolume": "2509568",
+      "endDate": "2027-12-31",
+      "url": "https://polymarket.com/event/will-china-invade-taiwan-by-december-31-2027"
+    },
+    {
+      "question": "Targu Mures: Kaitlin Quevedo vs Carole Monnet",
+      "probability": 100,
+      "volume24h": "136046",
+      "totalVolume": "135565",
+      "endDate": "2026-08-07",
+      "url": "https://polymarket.com/event/wta-quevedo-monnet-2026-07-31"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
