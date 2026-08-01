@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-01",
+  "generatedAt": "2026-08-01T10:43:26.181Z",
+  "markets": [
+    {
+      "question": "Will China invade Taiwan by September 30, 2026?",
+      "probability": 1,
+      "volume24h": "344279",
+      "totalVolume": "1785875",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/will-china-invade-taiwan-by-september-30-2026"
+    },
+    {
+      "question": "Bab el-Mandeb Strait effectively closed by August 31?",
+      "probability": 9,
+      "volume24h": "175635",
+      "totalVolume": "1044537",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by-august-31"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
