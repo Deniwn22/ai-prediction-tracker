@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-06",
+  "generatedAt": "2026-08-06T11:26:47.740Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 16,
+      "volume24h": "870128",
+      "totalVolume": "8076093",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 15?",
+      "probability": 2,
+      "volume24h": "408448",
+      "totalVolume": "3443015",
+      "endDate": "2026-08-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-15-20260727171036148"
+    },
+    {
+      "question": "Will Ronaldo Caiado win the 2026 Brazilian presidential election?",
+      "probability": 2,
+      "volume24h": "107822",
+      "totalVolume": "5555168",
+      "endDate": "2026-10-04",
+      "url": "https://polymarket.com/event/will-ronaldo-caiado-win-the-2026-brazilian-presidential-election"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
