@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-13",
+  "generatedAt": "2026-08-13T10:11:55.949Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 3,
+      "volume24h": "417900",
+      "totalVolume": "12640649",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 15?",
+      "probability": 0,
+      "volume24h": "373506",
+      "totalVolume": "6435237",
+      "endDate": "2026-08-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-15-20260727171036148"
+    },
+    {
+      "question": "UFC 330: Islam Makhachev vs. Ian Machado Garry (Welterweight, Main Card)",
+      "probability": 77,
+      "volume24h": "156874",
+      "totalVolume": "523165",
+      "endDate": "2026-08-16",
+      "url": "https://polymarket.com/event/ufc-isl-ian1-2026-08-15"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 30?",
+      "probability": 16,
+      "volume24h": "136461",
+      "totalVolume": "3157751",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+    },
+    {
+      "question": "Bab el-Mandeb Strait effectively closed by August 31?",
+      "probability": 3,
+      "volume24h": "120174",
+      "totalVolume": "1798971",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by-august-31"
+    },
+    {
+      "question": "Will Kai and Speed have between 30 and 49 total in-game deaths during their Minecraft marathon?",
+      "probability": 100,
+      "volume24h": "116775",
+      "totalVolume": "159683",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/will-kai-and-speed-have-between-30-and-49-total-in-game-deaths-during-their-minecraft-marathon-20260807054442842"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
