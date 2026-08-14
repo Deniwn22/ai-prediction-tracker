@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-14",
+  "generatedAt": "2026-08-14T10:07:38.988Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 2,
+      "volume24h": "469048",
+      "totalVolume": "13109697",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 15?",
+      "probability": 0,
+      "volume24h": "463539",
+      "totalVolume": "6898776",
+      "endDate": "2026-08-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-15-20260727171036148"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
