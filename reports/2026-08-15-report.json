@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-15",
+  "generatedAt": "2026-08-15T09:29:42.365Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 2,
+      "volume24h": "595936",
+      "totalVolume": "13650377",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "UFC 330: Islam Makhachev vs. Ian Machado Garry (Welterweight, Main Card)",
+      "probability": 76,
+      "volume24h": "510800",
+      "totalVolume": "1138646",
+      "endDate": "2026-08-16",
+      "url": "https://polymarket.com/event/ufc-isl-ian1-2026-08-15"
+    },
+    {
+      "question": "Bab el-Mandeb Strait effectively closed by August 31?",
+      "probability": 2,
+      "volume24h": "174918",
+      "totalVolume": "1989890",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by-august-31"
+    },
+    {
+      "question": "Counter-Strike: Wildcard vs paiN (BO3) - Esports World Cup Group D",
+      "probability": 44,
+      "volume24h": "165865",
+      "totalVolume": "166583",
+      "endDate": "2026-08-15",
+      "url": "https://polymarket.com/event/cs2-wc1-pain-2026-08-15"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 30?",
+      "probability": 14,
+      "volume24h": "163847",
+      "totalVolume": "3411036",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
