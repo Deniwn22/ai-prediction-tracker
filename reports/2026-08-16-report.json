@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-16",
+  "generatedAt": "2026-08-16T09:31:12.162Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 2,
+      "volume24h": "358776",
+      "totalVolume": "14009153",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 15?",
+      "probability": 0,
+      "volume24h": "236627",
+      "totalVolume": "7150091",
+      "endDate": "2026-08-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-15-20260727171036148"
+    },
+    {
+      "question": "Will Ronaldo Caiado win the 2026 Brazilian presidential election?",
+      "probability": 1,
+      "volume24h": "192331",
+      "totalVolume": "5906491",
+      "endDate": "2026-10-04",
+      "url": "https://polymarket.com/event/will-ronaldo-caiado-win-the-2026-brazilian-presidential-election"
+    },
+    {
+      "question": "Counter-Strike: 9z vs magic (BO3) - Esports World Cup Group D",
+      "probability": 64,
+      "volume24h": "117685",
+      "totalVolume": "117685",
+      "endDate": "2026-08-16",
+      "url": "https://polymarket.com/event/cs2-9z-mgc-2026-08-16"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
