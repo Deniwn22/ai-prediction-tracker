@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-17",
+  "generatedAt": "2026-08-17T09:47:23.594Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 1,
+      "volume24h": "198076",
+      "totalVolume": "14211637",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 30?",
+      "probability": 11,
+      "volume24h": "182425",
+      "totalVolume": "3673798",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+    },
+    {
+      "question": "Will Ronaldo Caiado win the 2026 Brazilian presidential election?",
+      "probability": 0,
+      "volume24h": "114667",
+      "totalVolume": "6021158",
+      "endDate": "2026-10-04",
+      "url": "https://polymarket.com/event/will-ronaldo-caiado-win-the-2026-brazilian-presidential-election"
+    },
+    {
+      "question": "Will Yabloko gain the most seats in the next Russian parliamentary election?",
+      "probability": 0,
+      "volume24h": "102583",
+      "totalVolume": "1113750",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/will-yabloko-gain-the-most-seats-in-the-next-russian-parliamentary-election"
+    },
+    {
+      "question": "Will Jair Bolsonaro win the 2026 Brazilian presidential election?",
+      "probability": 0,
+      "volume24h": "82410",
+      "totalVolume": "5697342",
+      "endDate": "2026-10-04",
+      "url": "https://polymarket.com/event/will-jair-bolsonaro-win-the-2026-brazilian-presidential-election"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
