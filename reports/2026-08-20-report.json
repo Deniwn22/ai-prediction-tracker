@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-20",
+  "generatedAt": "2026-08-20T09:38:38.037Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 30?",
+      "probability": 6,
+      "volume24h": "352182",
+      "totalVolume": "5025512",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 0,
+      "volume24h": "191061",
+      "totalVolume": "15333260",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 31?",
+      "probability": 87,
+      "volume24h": "183556",
+      "totalVolume": "225288",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-31"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
