@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-21",
+  "generatedAt": "2026-08-21T09:40:51.722Z",
+  "markets": [
+    {
+      "question": "Will Abigail Spanberger win the 2028 Democratic presidential nomination?",
+      "probability": 0,
+      "volume24h": "274095",
+      "totalVolume": "601864",
+      "endDate": "2028-11-07",
+      "url": "https://polymarket.com/event/will-abigail-spanberger-win-the-2028-democratic-presidential-nomination"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
