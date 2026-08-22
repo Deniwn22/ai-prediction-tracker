@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-22",
+  "generatedAt": "2026-08-22T09:30:31.592Z",
+  "markets": [
+    {
+      "question": "Will Abigail Spanberger win the 2028 Democratic presidential nomination?",
+      "probability": 0,
+      "volume24h": "462829",
+      "totalVolume": "1064692",
+      "endDate": "2028-11-07",
+      "url": "https://polymarket.com/event/will-abigail-spanberger-win-the-2028-democratic-presidential-nomination"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 0,
+      "volume24h": "272800",
+      "totalVolume": "15733900",
+      "endDate": "2026-09-01",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 31?",
+      "probability": 87,
+      "volume24h": "139147",
+      "totalVolume": "417012",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-31"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 22?",
+      "probability": 100,
+      "volume24h": "132387",
+      "totalVolume": "324053",
+      "endDate": "2026-08-22",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-22"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 30?",
+      "probability": 6,
+      "volume24h": "130788",
+      "totalVolume": "5180188",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
