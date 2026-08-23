@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-23",
+  "generatedAt": "2026-08-23T09:31:37.842Z",
+  "markets": [
+    {
+      "question": "US ceasefire against Iran continues through August 22?",
+      "probability": 100,
+      "volume24h": "134145",
+      "totalVolume": "458720",
+      "endDate": "2026-08-22",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-22"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 25?",
+      "probability": 99,
+      "volume24h": "112689",
+      "totalVolume": "318977",
+      "endDate": "2026-08-25",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-25"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 31?",
+      "probability": 94,
+      "volume24h": "112436",
+      "totalVolume": "529448",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-31"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
