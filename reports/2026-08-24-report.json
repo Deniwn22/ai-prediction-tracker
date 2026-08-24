@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-24",
+  "generatedAt": "2026-08-24T09:53:43.534Z",
+  "markets": [
+    {
+      "question": "US ceasefire against Iran continues through August 31?",
+      "probability": 92,
+      "volume24h": "177327",
+      "totalVolume": "706986",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-31"
+    },
+    {
+      "question": "Will Abigail Spanberger win the 2028 Democratic presidential nomination?",
+      "probability": 0,
+      "volume24h": "163590",
+      "totalVolume": "1230171",
+      "endDate": "2028-11-07",
+      "url": "https://polymarket.com/event/will-abigail-spanberger-win-the-2028-democratic-presidential-nomination"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 0,
+      "volume24h": "135346",
+      "totalVolume": "15943621",
+      "endDate": "2026-09-01",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Augsburg: Robert Strombachs vs Kai Wehnelt",
+      "probability": 0,
+      "volume24h": "117813",
+      "totalVolume": "117813",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/atp-stromba-wehnelt-2026-08-24"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 25?",
+      "probability": 99,
+      "volume24h": "114728",
+      "totalVolume": "433714",
+      "endDate": "2026-08-25",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-25"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 30?",
+      "probability": 6,
+      "volume24h": "100668",
+      "totalVolume": "5368402",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
