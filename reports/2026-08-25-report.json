@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-25",
+  "generatedAt": "2026-08-25T09:39:35.689Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 0,
+      "volume24h": "272124",
+      "totalVolume": "16215645",
+      "endDate": "2026-09-01",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 31?",
+      "probability": 94,
+      "volume24h": "163378",
+      "totalVolume": "869090",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-31"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by December 31?",
+      "probability": 34,
+      "volume24h": "156664",
+      "totalVolume": "9199690",
+      "endDate": "2026-12-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+    },
+    {
+      "question": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+      "probability": 72,
+      "volume24h": "138654",
+      "totalVolume": "7825664",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/will-united-russia-er-gain-the-most-seats-in-the-next-russian-parliamentary-election"
+    },
+    {
+      "question": "Will Anthropic's valuation hit (HIGH) $4.0T by December 31?",
+      "probability": 11,
+      "volume24h": "105864",
+      "totalVolume": "690730",
+      "endDate": "2027-01-01",
+      "url": "https://polymarket.com/event/will-anthropics-valuation-hit-high-4pt0t-by-december-31"
+    },
+    {
+      "question": "Will Portland Trail Blazers win the 2027 NBA Finals?",
+      "probability": 1,
+      "volume24h": "105433",
+      "totalVolume": "708769",
+      "endDate": "2027-07-01",
+      "url": "https://polymarket.com/event/will-portland-trail-blazers-win-the-2027-nba-finals"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
