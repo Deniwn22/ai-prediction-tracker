@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-26",
+  "generatedAt": "2026-08-26T09:47:27.737Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 30?",
+      "probability": 11,
+      "volume24h": "837408",
+      "totalVolume": "6279932",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by December 31?",
+      "probability": 38,
+      "volume24h": "328106",
+      "totalVolume": "9527799",
+      "endDate": "2026-12-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 25?",
+      "probability": 100,
+      "volume24h": "266580",
+      "totalVolume": "802347",
+      "endDate": "2026-08-25",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-25"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 31?",
+      "probability": 97,
+      "volume24h": "239042",
+      "totalVolume": "1108131",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-31"
+    },
+    {
+      "question": "US ceasefire against Iran continues through September 15?",
+      "probability": 91,
+      "volume24h": "238041",
+      "totalVolume": "602115",
+      "endDate": "2026-09-15",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-september-15"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 0,
+      "volume24h": "189738",
+      "totalVolume": "16405383",
+      "endDate": "2026-09-01",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Will China invade Taiwan by end of 2026?",
+      "probability": 4,
+      "volume24h": "183386",
+      "totalVolume": "40230471",
+      "endDate": "2026-12-31",
+      "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 15?",
+      "probability": 4,
+      "volume24h": "161526",
+      "totalVolume": "686038",
+      "endDate": "2026-09-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-15-20260810150912478"
+    },
+    {
+      "question": "US ceasefire against Iran continues through September 30?",
+      "probability": 84,
+      "volume24h": "143473",
+      "totalVolume": "639681",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-september-30"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
