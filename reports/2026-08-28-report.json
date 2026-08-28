@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-28",
+  "generatedAt": "2026-08-28T20:46:32.034Z",
+  "markets": [
+    {
+      "question": "Will Paris Saint-Germain FC win on 2026-08-28?",
+      "probability": 7,
+      "volume24h": "726592",
+      "totalVolume": "828761",
+      "endDate": "2026-08-28",
+      "url": "https://polymarket.com/event/fl1-lil-psg-2026-08-28-psg"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 0,
+      "volume24h": "530627",
+      "totalVolume": "17140484",
+      "endDate": "2026-09-01",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+      "probability": 75,
+      "volume24h": "253919",
+      "totalVolume": "8277620",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/will-united-russia-er-gain-the-most-seats-in-the-next-russian-parliamentary-election"
+    },
+    {
+      "question": "UFC Fight Night: Song Yadong vs. Umar Nurmagomedov (Bantamweight, Main Card)",
+      "probability": 16,
+      "volume24h": "154503",
+      "totalVolume": "305519",
+      "endDate": "2026-08-30",
+      "url": "https://polymarket.com/event/ufc-son-uma-2026-08-29"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
