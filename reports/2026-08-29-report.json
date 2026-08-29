@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-29",
+  "generatedAt": "2026-08-29T14:16:05.314Z",
+  "markets": [
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 0,
+      "volume24h": "781550",
+      "totalVolume": "17629131",
+      "endDate": "2026-09-01",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    },
+    {
+      "question": "Will 1. FSV Mainz 05 win on 2026-08-29?",
+      "probability": 51,
+      "volume24h": "196654",
+      "totalVolume": "197461",
+      "endDate": "2026-08-29",
+      "url": "https://polymarket.com/event/bun-mai-scp-2026-08-29-mai"
+    },
+    {
+      "question": "Google Maps renames Lake Ontario to \"Lake America\" by August 31, 2026?",
+      "probability": 24,
+      "volume24h": "164416",
+      "totalVolume": "188650",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/google-maps-renames-lake-ontario-to-lake-america-by-august-31-2026"
+    },
+    {
+      "question": "US ceasefire against Iran continues through August 31?",
+      "probability": 98,
+      "volume24h": "156758",
+      "totalVolume": "1491320",
+      "endDate": "2026-08-31",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-august-31"
+    },
+    {
+      "question": "Will Bytedance have the best AI model at the end of August 2026?",
+      "probability": 0,
+      "volume24h": "152956",
+      "totalVolume": "502564",
+      "endDate": "2026-09-01",
+      "url": "https://polymarket.com/event/will-bytedance-have-the-best-ai-model-at-the-end-of-august-2026-20260717020210297"
+    },
+    {
+      "question": "US ceasefire against Iran continues through September 15?",
+      "probability": 88,
+      "volume24h": "152346",
+      "totalVolume": "831184",
+      "endDate": "2026-09-15",
+      "url": "https://polymarket.com/event/us-x-iran-ceasefire-continues-through-september-15"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
