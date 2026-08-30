@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-30",
+  "generatedAt": "2026-08-30T14:20:47.499Z",
+  "markets": [
+    {
+      "question": "Will Bytedance have the best AI model at the end of August 2026?",
+      "probability": 0,
+      "volume24h": "172950",
+      "totalVolume": "675514",
+      "endDate": "2026-09-01",
+      "url": "https://polymarket.com/event/will-bytedance-have-the-best-ai-model-at-the-end-of-august-2026-20260717020210297"
+    },
+    {
+      "question": "Bab el-Mandeb Strait effectively closed by September 15?",
+      "probability": 2,
+      "volume24h": "161415",
+      "totalVolume": "242195",
+      "endDate": "2026-09-16",
+      "url": "https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by-september-15"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by August 31?",
+      "probability": 0,
+      "volume24h": "147521",
+      "totalVolume": "17777290",
+      "endDate": "2026-09-01",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
