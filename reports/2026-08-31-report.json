@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-31",
+  "generatedAt": "2026-08-31T16:54:32.563Z",
+  "markets": [
+    {
+      "question": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+      "probability": 69,
+      "volume24h": "389710",
+      "totalVolume": "8801187",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/will-united-russia-er-gain-the-most-seats-in-the-next-russian-parliamentary-election"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
