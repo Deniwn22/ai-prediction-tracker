@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-03",
+  "generatedAt": "2026-09-03T13:24:54.946Z",
+  "markets": [
+    {
+      "question": "Counter-Strike: magic vs BIG (BO3) - IEM Beijing: Global Qualifier Playoffs",
+      "probability": 59,
+      "volume24h": "253008",
+      "totalVolume": "253008",
+      "endDate": "2026-09-03",
+      "url": "https://polymarket.com/event/cs2-mgc-big5-2026-09-03"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 15?",
+      "probability": 1,
+      "volume24h": "225205",
+      "totalVolume": "1363383",
+      "endDate": "2026-09-15",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-15-20260810150912478"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by December 31?",
+      "probability": 28,
+      "volume24h": "169794",
+      "totalVolume": "10359098",
+      "endDate": "2026-12-31",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31"
+    },
+    {
+      "question": "Israel closes its airspace by September 30?",
+      "probability": 10,
+      "volume24h": "160458",
+      "totalVolume": "309274",
+      "endDate": "2026-10-01",
+      "url": "https://polymarket.com/event/israel-closes-its-airspace-by-september-30"
+    },
+    {
+      "question": "Strait of Hormuz traffic returns to normal by September 30?",
+      "probability": 3,
+      "volume24h": "138406",
+      "totalVolume": "7593005",
+      "endDate": "2026-09-30",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
