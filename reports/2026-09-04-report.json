@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-04T13:19:36.808Z",
+  "markets": [
+    {
+      "question": "Will Anthropic have the best AI model at the end of September 2026?",
+      "probability": 87,
+      "volume24h": "166308",
+      "totalVolume": "362962",
+      "endDate": "2026-10-01",
+      "url": "https://polymarket.com/event/will-anthropic-have-the-best-ai-model-at-the-end-of-september-2026-20260717143137053"
+    },
+    {
+      "question": "Will OpenAI have the best AI model at the end of September 2026?",
+      "probability": 12,
+      "volume24h": "128640",
+      "totalVolume": "248727",
+      "endDate": "2026-10-01",
+      "url": "https://polymarket.com/event/will-openai-have-the-best-ai-model-at-the-end-of-september-2026-20260717143137058"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
