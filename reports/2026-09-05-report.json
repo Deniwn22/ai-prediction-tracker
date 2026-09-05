@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-05T12:29:58.152Z",
+  "markets": [
+    {
+      "question": "Israel closes its airspace by September 30?",
+      "probability": 69,
+      "volume24h": "532934",
+      "totalVolume": "966763",
+      "endDate": "2026-10-01",
+      "url": "https://polymarket.com/event/israel-closes-its-airspace-by-september-30"
+    },
+    {
+      "question": "Russia x Ukraine ceasefire agreement by October 31, 2026?",
+      "probability": 19,
+      "volume24h": "404245",
+      "totalVolume": "1441763",
+      "endDate": "2026-11-01",
+      "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-agreement-by-october-31-2026"
+    },
+    {
+      "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
+      "probability": 31,
+      "volume24h": "226516",
+      "totalVolume": "2481727",
+      "endDate": "2027-01-01",
+      "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-agreement-by-december-31-2026"
+    }
+  ],
+  "alerts": [],
+  "insight": {
+    "en": "Analysis unavailable.",
+    "ru": "Analysis unavailable."
+  }
+}
